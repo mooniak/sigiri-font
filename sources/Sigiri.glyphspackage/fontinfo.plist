@@ -626,6 +626,11 @@ table GDEF {
 
 } GDEF;";
 name = Prefix;
+},
+{
+code = "# lankafea:generated v1 — do not edit; regenerate with lankafea
+# classes: ";
+name = "lankafea-manifest";
 }
 );
 features = (
@@ -767,13 +772,8 @@ value = "Lalith Rathnayake";
 );
 },
 {
-key = manufacturers;
-values = (
-{
-language = dflt;
-value = mooniak;
-}
-);
+key = designerURL;
+value = "http://www.mooniak.com/";
 },
 {
 key = licenses;
@@ -785,16 +785,21 @@ value = "This Font Software is licensed under the SIL Open Font License, Version
 );
 },
 {
-key = designerURL;
-value = "http://www.mooniak.com/";
+key = licenseURL;
+value = "https://openfontlicense.org";
+},
+{
+key = manufacturers;
+values = (
+{
+language = dflt;
+value = mooniak;
+}
+);
 },
 {
 key = manufacturerURL;
 value = "https://mooniak.com/";
-},
-{
-key = licenseURL;
-value = "https://openfontlicense.org";
 }
 );
 settings = {

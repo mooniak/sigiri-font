@@ -8,10 +8,6 @@ shapes = (
 alignment = -1;
 pos = (618,0);
 ref = "rasign-sinh";
-},
-{
-alignment = -1;
-ref = "khIi-sinh";
 }
 );
 userData = {

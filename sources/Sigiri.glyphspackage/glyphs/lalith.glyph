@@ -1,5 +1,5 @@
 {
-glyphname = trademark;
+glyphname = lalith;
 layers = (
 {
 layerId = m001;
@@ -1127,5 +1127,4 @@ width = 9;
 width = 1004;
 }
 );
-unicode = 8482;
 }
