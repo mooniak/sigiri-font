@@ -1,0 +1,16 @@
+# gftools-builder configuration. See:
+#   https://github.com/googlefonts/gftools/blob/main/Lib/gftools/builder/schema.py
+#
+# This is a MINIMAL BLANK-SLATE starter — a 2-master Weight variable font with a
+# handful of placeholder glyphs. Replace sources/ with your own source (a
+# .glyphs / .glyphspackage from Glyphs.app, or your own UFOs + designspace) and
+# update familyName below.
+sources:
+  - MyFont.designspace
+familyName: "My Font"
+outputDir: ../fonts
+buildStatic: false
+buildVariable: true
+buildTTF: true
+buildOTF: false
+buildWebfont: true

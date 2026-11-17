@@ -1,0 +1,85 @@
+{
+  "name": "My Font",
+  "id": "my-font",
+  "type": "family",
+  "designer": [
+    "Mooniak"
+  ],
+  "scripts": [
+    "Latn"
+  ],
+  "description": "A short description of the font goes here.",
+  "license": "OFL-1.1",
+  "channels": [
+    "canary",
+    "dev",
+    "release"
+  ],
+  "versions_provider": "tags",
+  "repository": {
+    "url": "https://github.com/mooniak/my-font",
+    "type": "git"
+  },
+  "homepage_url": "https://src.mooniak.com/my-font/",
+  "issues_url": "https://github.com/mooniak/my-font/issues/",
+  "funding_url": "https://opencollective.com/akuruxyz/projects/lanka-font-library",
+  "foundry": {
+    "name": "mooniak",
+    "email": "hello@mooniak.com",
+    "url": "https://mooniak.com/",
+    "vendor_id": "MNIK"
+  },
+  "designers": [
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "maintenance": {
+    "status": "actively-developed",
+    "comment": ""
+  },
+  "tools": "",
+  "progress": {
+    "design": 0,
+    "family_styles": 0,
+    "character_set": 0,
+    "drawing_quality": 0,
+    "spacing": 0,
+    "kerning": 0,
+    "hinting": 0,
+    "opentype_features": 0
+  },
+  "tags": {
+    "style": "",
+    "contrast": "",
+    "width": "normal",
+    "body_height": "",
+    "intended_usage": "body text",
+    "figures": "normal",
+    "languages": [
+      "en_US"
+    ],
+    "related_fonts": []
+  },
+  "directory": {
+    "listed": true,
+    "display_texts": {
+      "en_US": ""
+    },
+    "display_images": {
+      "banner": "",
+      "thumbnail": "",
+      "small": "",
+      "medium": "",
+      "large": ""
+    },
+    "links": {
+      "font_in_use": "",
+      "googlefonts": "",
+      "fontlibrary_org": "",
+      "typekit": ""
+    }
+  }
+}
