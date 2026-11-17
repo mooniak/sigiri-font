@@ -548,8 +548,8 @@ lookup kernHorizontalKerninglookup0 {
 	\\question \\questiondown \\quotedbl \\quotedblbase \\quotedblleft \\quotedblright 
 	\\quoteleft \\quoteright \\quotesinglbase \\quotesingle \\registered \\semicolon 
 	\\seven \\a-sinh \\aa-sinh \\aae-sinh \\ae-sinh \\ai-sinh \\anusvaraya-sinh \\au-sinh \\ba-sinh \\bha-sinh 
-	\\ca-sinh \\cha-sinh \\da-sinh \\dda-sinh \\sinDda.virama \\ddha-sinh \\dha-sinh \\sinDrI \\sinDrIi 
-	\\sinDra \\e-sinh \\ee-sinh \\fRI-sinh \\fRIi-sinh \\fa-sinh \\ga-sinh \\gha-sinh \\ha-sinh \\i-sinh \\ii-sinh 
+	\\ca-sinh \\cha-sinh \\da-sinh \\dda-sinh \\ddha-sinh \\dha-sinh 
+	\\e-sinh \\ee-sinh \\fRI-sinh \\fRIi-sinh \\fa-sinh \\ga-sinh \\gha-sinh \\ha-sinh \\i-sinh \\ii-sinh 
 	\\ja-sinh \\jha-sinh \\jnya-sinh \\ka-sinh \\kha-sinh \\la-sinh \\lla-sinh \\ma-sinh \\aasign-sinh 
 	\\aaesign-sinh \\aesign-sinh \\aisign-sinh \\ausign-sinh \\esign-sinh \\eesign-sinh 
 	\\isign-sinh \\isign-sinh.alt \\isign-sinh.alt1 \\isign-sinh.alt2 \\isign-sinh.alt3 
@@ -558,7 +558,7 @@ lookup kernHorizontalKerninglookup0 {
 	\\vocalicrrsign-sinh \\usign-sinh \\usign-sinh.alt \\usign-sinh.alt1 \\usign-sinh.alt2 
 	\\usign-sinh.alt3 \\uusign-sinh \\uusign-sinh.alt \\uusign-sinh.alt1 
 	\\uusign-sinh.alt2 \\uusign-sinh.alt3 \\mba-sinh \\nDRI-sinh \\nDRIi-sinh \\na-sinh \\ndRa-sinh 
-	\\nda-sinh \\sinNdda \\nyja-sinh \\nga-sinh \\nna-sinh \\nndda-sinh \\nnga-sinh \\nya-sinh \\o-sinh \\oo-sinh 
+	\\nda-sinh \\nyja-sinh \\nga-sinh \\nna-sinh \\nndda-sinh \\nnga-sinh \\nya-sinh \\o-sinh \\oo-sinh 
 	\\pa-sinh \\pha-sinh \\ra-sinh \\rasign-sinh \\rasign-sinh.long \\rasign-sinh.medium 
 	\\rasign-sinh.short \\sa-sinh \\sha-sinh \\ssRI-sinh \\ssRIi-sinh \\ssa-sinh \\ta-sinh \\tha-sinh \\tta-sinh 
 	\\ttha-sinh \\u-sinh \\uu-sinh \\va-sinh \\virama-sinh \\visargaya-sinh \\vocalicr-sinh \\vocalicl-sinh 
