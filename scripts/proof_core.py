@@ -13,6 +13,10 @@ Two independent axes decide what a proof contains (see ``gates.json``):
 * **Development stage** (the build channel: canary / dev / release). Decides HOW
   DEEP the proof goes: canary = HTML only, dev = HTML + PDF, release = ungated.
 
+Other scripts (Tamil) have no design-stage model yet. A font whose cmap covers one gets
+that script's sections *added*, ungated, whatever its Sinhala stage -- see
+``detect_scripts`` and gates.json ``scripts``.
+
 Output is HTML first. Each proof page references its font by a *relative* URL, so the
 same file works as a page on the published site and (loaded from disk) as the source
 for the PDF render.
@@ -22,7 +26,7 @@ from __future__ import annotations
 import html as _html
 import json
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import quote
@@ -41,11 +45,21 @@ GATES_PATH = HERE / "gates.json"
 FONT_EXTS = (".ttf", ".otf")
 GLYPHSET_SLUG = "glyphset-coverage"
 GLYPHSET_TITLE = "Glyph Coverage"
+LATIN_WATERFALL_SLUG = "latin-waterfall"
+LATIN_WATERFALL_TITLE = "Latin Coverage"
+LATIN_GLYPHSETS_PATH = HERE / "latin_glyphsets.json"
+# The GF Latin tier ladder (gftools/glyphsets' GF_Latin_*.nam, vendored as
+# latin_glyphsets.json): each tier is a strict superset of the previous one, so the
+# highest fully-covered tier is the font's Latin coverage level. African/Vietnamese are
+# separate add-on sets, not rungs of this ladder -- reported alongside it, not in it.
+_LATIN_LADDER = ("Kernel", "Core", "Plus", "Beyond")
+_LATIN_EXTRAS = ("African", "Vietnamese")
 
 _FRONTMATTER = re.compile(r"\A---\n(.*?\n)---\n?(.*)\Z", re.DOTALL)
 _STAGE_HEADING = re.compile(r"^##\s+Stage\s+(\d+)\b.*$", re.MULTILINE)
 
-# Text for fonts with no Sinhala corpus to draw on (Latin/Tamil/symbol fonts).
+# Text for fonts with neither a Sinhala stage nor a covered script group to draw on
+# (Latin/symbol fonts).
 _FALLBACK_TEXT = (
     "<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</p>"
     "<p>The quick brown fox jumps over the lazy dog.</p>"
@@ -63,6 +77,7 @@ class Section:
     meta: dict = field(default_factory=dict)
     min_stage: int = 0
     lang: str = "si"
+    script: str | None = None    # gates.json 'scripts' key this section belongs to, if any
 
 
 @dataclass
@@ -76,6 +91,7 @@ class Gate:
     shown: list[str] = field(default_factory=list)
     withheld: list[tuple[str, int]] = field(default_factory=list)   # (slug, min_stage)
     next_gaps: list[str] = field(default_factory=list)              # missing for stage+1
+    scripts: list[str] = field(default_factory=list)                # labels of non-Sinhala scripts proofed
 
 
 def load_gates(path: Path | None = None) -> dict:
@@ -110,6 +126,12 @@ def filter_stage_blocks(body: str, stage: int | None) -> str:
     return "".join(out)
 
 
+def script_groups(gates: dict | None = None) -> dict[str, dict]:
+    """gates.json 'scripts' without its '_doc' entries: {key: {label, lang, block, ...}}."""
+    return {k: v for k, v in (gates or load_gates()).get("scripts", {}).items()
+            if not k.startswith("_")}
+
+
 def discover_sections(sections_dir: Path | None = None, gates: dict | None = None,
                       stage: int | None = None) -> list[Section]:
     """Every ``*.md`` in sections/, in filename order, tagged with its min_stage.
@@ -123,6 +145,7 @@ def discover_sections(sections_dir: Path | None = None, gates: dict | None = Non
     mins = g["sections"]
     default_min = g.get("default_min_stage", 9)
     blocked = set(g.get("stage_blocks", {}).get("slugs", []))
+    group = {slug: (key, sc) for key, sc in script_groups(g).items() for slug in sc["sections"]}
     out: list[Section] = []
     if not d.is_dir():
         return out
@@ -131,9 +154,13 @@ def discover_sections(sections_dir: Path | None = None, gates: dict | None = Non
         if f.stem in blocked:
             body = filter_stage_blocks(body, stage)
         title = meta.get("title") or f.stem.replace("-", " ").replace("_", " ").title()
+        key, sc = group.get(f.stem, (None, {}))
+        # A section only a script group owns is not stage-gated (stage 0); one that is also in
+        # 'sections' (tamil-pangram) keeps its Sinhala stage for Sinhala fonts.
+        min_stage = int(mins[f.stem]) if f.stem in mins else (0 if key else default_min)
         out.append(Section(slug=f.stem, title=title, meta=meta,
                            html=md_to_html(body.strip()),
-                           min_stage=int(mins.get(f.stem, default_min))))
+                           min_stage=min_stage, lang=sc.get("lang", "si"), script=key))
     return out
 
 
@@ -143,11 +170,15 @@ def fallback_section() -> Section:
 
 
 # ── font files ──────────────────────────────────────────────────────────────
-def font_files(repo_path: Path) -> list[Path]:
-    """Binaries to proof for one repo: ttf preferred, else otf, else variable.
-    (A variable font's default instance makes a poor proof target, so statics win.)"""
+def font_files(repo_path: Path, prefer_variable: bool = False) -> list[Path]:
+    """Binaries to proof for one repo.
+
+    Default (local ``mnik proof-pdf``): ttf, else otf, else variable -- a variable font's
+    default instance makes a poor print proof, so statics win. ``prefer_variable`` (the
+    Pages site) flips that: variable, else ttf, else otf, so a build that ships both is
+    proofed once from its variable font rather than once per static instance."""
     root = repo_path / "fonts"
-    for sub in ("ttf", "otf", "variable"):
+    for sub in (("variable", "ttf", "otf") if prefer_variable else ("ttf", "otf", "variable")):
         d = root / sub
         if d.is_dir():
             files = sorted(p for p in d.rglob("*")
@@ -209,6 +240,34 @@ def detect_stage(paths: list[Path]) -> dict | None:
         return None
 
 
+_SINHALA_BLOCK = (0x0D80, 0x0DFF)
+
+
+def covers_sinhala(paths: list[Path]) -> bool:
+    """Does any binary map a single Sinhala codepoint? (The stage model has a floor, stage 0,
+    that a font with no Sinhala at all also lands on -- this tells the two apart.)"""
+    cmap, _ = _cmap_and_order(paths)
+    return any(_SINHALA_BLOCK[0] <= cp <= _SINHALA_BLOCK[1] for cp in cmap)
+
+
+def detect_scripts(paths: list[Path], gates: dict | None = None) -> list[str]:
+    """Keys of the non-Sinhala scripts (gates.json 'scripts') the font covers, by cmap.
+
+    A script counts once ``min_codepoints`` of its Unicode block are mapped in the union
+    of the given binaries, so a logo font with a stray letter or two does not. No stage
+    model is involved: this only decides which script groups' sections are added."""
+    groups = script_groups(gates)
+    if not groups or not paths:
+        return []
+    cmap, _ = _cmap_and_order(paths)
+    found = []
+    for key, sc in groups.items():
+        lo, hi = sc["block"]
+        if sum(1 for cp in cmap if lo <= cp <= hi) >= sc.get("min_codepoints", 1):
+            found.append(key)
+    return found
+
+
 # ── gating ──────────────────────────────────────────────────────────────────
 def plan(channel: str, gates: dict | None = None) -> dict:
     """Development stage -> proof depth ({'gated', 'pdf'}). Unknown channel = canary."""
@@ -217,27 +276,111 @@ def plan(channel: str, gates: dict | None = None) -> dict:
 
 
 def apply_gates(sections: list[Section], stage: dict | None, channel: str,
-                gates: dict | None = None, ungated: bool = False) -> tuple[list[Section], Gate]:
-    """Pick the sections this font has earned. Fonts whose stage can't be determined
-    (non-Sinhala, or no model) get the generic specimen instead of the Sinhala corpus."""
-    p = plan(channel, gates)
+                gates: dict | None = None, ungated: bool = False,
+                scripts: list[str] | None = None) -> tuple[list[Section], Gate]:
+    """Pick the sections this font has earned.
+
+    * Sinhala sections are gated by ``stage`` (a font with no stage gets none of them).
+    * ``scripts`` (from ``detect_scripts``) ADD that script group's sections, ungated, in the
+      order gates.json lists them. A section owned only by a script group never reaches a
+      font that does not cover the script.
+    * A font with neither a stage nor a covered script gets the generic specimen."""
+    g = gates or load_gates()
+    groups = script_groups(g)
+    scripts = [k for k in (scripts or []) if k in groups]
+    p = plan(channel, g)
     gated = p["gated"] and not ungated
     gate = Gate(stage=stage["n"] if stage else None,
                 stage_name=stage["name"] if stage else None,
                 channel=channel, gated=gated, pdf=p["pdf"],
-                next_gaps=(stage or {}).get("next_gaps", []))
-    if stage is None:
+                next_gaps=(stage or {}).get("next_gaps", []),
+                scripts=[groups[k]["label"] for k in scripts])
+    if stage is None and not scripts:
         gate.gated = False
         gate.shown = ["specimen"]
         return [fallback_section()], gate
+    covered = {slug for k in scripts for slug in groups[k]["sections"]}      # added below
+    owned = {slug for sc in groups.values() for slug in sc["sections"]}
+    staged = set(g["sections"])
     keep: list[Section] = []
-    for s in sections:
-        if not gated or s.min_stage <= stage["n"]:
-            keep.append(s)
-            gate.shown.append(s.slug)
-        else:
-            gate.withheld.append((s.slug, s.min_stage))
+    if stage is None:
+        gate.gated = False      # nothing to gate on: the script groups are ungated
+    else:
+        for s in sections:
+            if s.slug in covered or (s.slug in owned and s.slug not in staged):
+                continue        # a covered script's, shown below; or another script's, not for this font
+            if not gated or s.min_stage <= stage["n"]:
+                keep.append(s)
+                gate.shown.append(s.slug)
+            else:
+                gate.withheld.append((s.slug, s.min_stage))
+    by_slug = {s.slug: s for s in sections}
+    for k in scripts:
+        for slug in groups[k]["sections"]:
+            if slug in by_slug and slug not in gate.shown:
+                keep.append(replace(by_slug[slug], min_stage=0))   # ungated: no "stage N+" tag
+                gate.shown.append(slug)
     return keep, gate
+
+
+# ── Latin coverage waterfall ────────────────────────────────────────────────
+def load_latin_glyphsets(path: Path | None = None) -> dict[str, list[int]]:
+    try:
+        return json.loads((path or LATIN_GLYPHSETS_PATH).read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def compute_latin_tiers(cmap: set[int], glyphsets: dict[str, list[int]] | None = None) -> dict:
+    """Coverage of the font's cmap against each GF Latin tier.
+
+    Returns ``{"ladder": [{"tier", "have", "total", "pct", "complete"}, ...],
+    "extras": [...], "level": <highest fully-covered ladder tier, or None>}``.
+    """
+    gs = glyphsets if glyphsets is not None else load_latin_glyphsets()
+    ladder = []
+    level = None
+    for tier in _LATIN_LADDER:
+        cps = gs.get(tier, [])
+        have = sum(1 for cp in cps if cp in cmap)
+        total = len(cps)
+        complete = total > 0 and have == total
+        if complete:
+            level = tier
+        ladder.append({"tier": tier, "have": have, "total": total,
+                       "pct": round(100 * have / total, 1) if total else 0.0,
+                       "complete": complete})
+    extras = []
+    for tier in _LATIN_EXTRAS:
+        cps = gs.get(tier, [])
+        have = sum(1 for cp in cps if cp in cmap)
+        total = len(cps)
+        extras.append({"tier": tier, "have": have, "total": total,
+                       "pct": round(100 * have / total, 1) if total else 0.0,
+                       "complete": total > 0 and have == total})
+    return {"ladder": ladder, "extras": extras, "level": level}
+
+
+def build_latin_waterfall_section(cmap: set[int], glyphsets: dict[str, list[int]] | None = None) -> Section:
+    """A table of GF Latin tier coverage (Kernel..Beyond, plus African/Vietnamese)."""
+    result = compute_latin_tiers(cmap, glyphsets)
+    rows = []
+    for row in result["ladder"] + result["extras"]:
+        status = "complete" if row["complete"] else ("partial" if row["have"] else "none")
+        rows.append(
+            f'<tr class="latin-tier latin-tier-{status}"><td>{_html.escape(row["tier"])}</td>'
+            f'<td>{row["have"]} / {row["total"]}</td><td>{row["pct"]}%</td>'
+            f'<td>{"complete" if row["complete"] else ""}</td></tr>')
+    level = result["level"] or "below Kernel"
+    note = (f'<p class="glyphset-note">Highest fully-covered GF Latin tier: <b>{_html.escape(level)}</b>. '
+            f'Kernel/Core/Plus/Beyond are cumulative (each a superset of the last); African and '
+            f'Vietnamese are separate add-on sets, not rungs of that ladder.</p>')
+    table = ('<table class="latin-waterfall"><thead><tr><th>Tier</th><th>Covered</th>'
+             f'<th>%</th><th></th></tr></thead><tbody>{"".join(rows)}</tbody></table>')
+    sec = Section(slug=LATIN_WATERFALL_SLUG, title=LATIN_WATERFALL_TITLE, min_stage=0,
+                  html=note + table, lang="en")
+    sec.meta["latin_waterfall"] = True
+    return sec
 
 
 # ── glyph coverage grid ─────────────────────────────────────────────────────
@@ -338,6 +481,9 @@ body { font-family: system-ui, sans-serif; margin: 0; color: #111; }
 .glyph-glyph { font-family: "ProofGlyphset", sans-serif; font-size: 18pt; line-height: 1.2; }
 .glyph-label { font-family: Menlo, Consolas, monospace; font-size: 5.5pt; color: #888; margin-top: 2px;
                line-height: 1.15; word-break: break-all; padding: 0 2px; }
+.latin-waterfall { font-family: system-ui, sans-serif; font-size: 10pt; width: 100%; margin-top: 1rem; border-collapse: collapse; }
+.latin-waterfall th, .latin-waterfall td { border-bottom: 1px solid #eee; padding: 4px 8px; text-align: left; }
+.latin-tier-complete td { color: #1a7a33; } .latin-tier-partial td { color: #996a00; } .latin-tier-none td { color: #999; }
 @media screen { .section { page-break-before: auto; margin-top: 3rem; } .cover { min-height: 60vh; } }
 """
 
@@ -359,8 +505,14 @@ def rel_href(from_dir: Path, target: Path) -> str:
 
 def _gate_html(g: Gate) -> str:
     rows = [f'<span class="chan chan-{g.channel}">{_html.escape(g.channel)}</span>']
+    scripts = ", ".join(_html.escape(x) for x in g.scripts)
     if g.stage is not None:
         rows.append(f'Design stage <b>{g.stage}</b> &mdash; {_html.escape(g.stage_name or "")}')
+        if scripts:
+            rows.append(f"Also proofed: {scripts} (no design-stage model yet &mdash; every {scripts} section shown)")
+    elif scripts:
+        rows.append(f"Design stage not determined (staging is Sinhala-only) &mdash; "
+                    f"{scripts} proofed in full, not stage-gated")
     else:
         rows.append("Design stage not determined (no Sinhala stage model for this font) &mdash; generic specimen")
     mode = ("gated by design stage" if g.gated else
@@ -423,11 +575,14 @@ def build_proof_pages(font_paths: list[Path], proof_dir: Path, fonts_dir: Path, 
     """Write one proof HTML per font into ``proof_dir``.
 
     Fonts are referenced by relative URL from ``fonts_dir`` (the caller copies them
-    there), so pages are portable. The stage is detected once from the union of all
-    binaries -- a family has one stage -- and applied to every page.
+    there), so pages are portable. The stage and the covered scripts are detected once from
+    the union of all binaries -- a family has one of each -- and applied to every page.
     """
     g = gates or load_gates()
     stage = detect_stage(font_paths)
+    scripts = detect_scripts(font_paths, g)
+    if scripts and stage is not None and stage["n"] == 0 and not covers_sinhala(font_paths):
+        stage = None    # a Tamil font with no Sinhala at all: the Sinhala model has nothing to say
     if stage_override is not None:
         stage = {"n": stage_override, "name": (stage or {}).get("name") or f"stage {stage_override}",
                  "next_gaps": []}
@@ -435,13 +590,16 @@ def build_proof_pages(font_paths: list[Path], proof_dir: Path, fonts_dir: Path, 
     proof_dir.mkdir(parents=True, exist_ok=True)
     corpus = discover_sections(gates=g, stage=None if (ungated or not plan(channel, g)["gated"])
                                else (stage["n"] if stage else None))
-    sections, gate = apply_gates(corpus, stage, channel, g, ungated=ungated)
+    sections, gate = apply_gates(corpus, stage, channel, g, ungated=ungated, scripts=scripts)
     if only:
-        unknown = only - {s.slug for s in corpus} - {GLYPHSET_SLUG}
+        unknown = only - {s.slug for s in corpus} - {GLYPHSET_SLUG, LATIN_WATERFALL_SLUG}
         if unknown:
             raise SystemExit(f"Unknown section(s): {', '.join(sorted(unknown))}")
         sections = [s for s in sections if s.slug in only]
     want_glyphset = (not only) or GLYPHSET_SLUG in only
+    want_waterfall = "latin" in scripts and ((not only) or LATIN_WATERFALL_SLUG in only)
+    if want_waterfall:
+        gate.shown.append(LATIN_WATERFALL_SLUG)
     for fp in font_paths:
         page_sections = list(sections)
         patched_href = None
@@ -450,6 +608,9 @@ def build_proof_pages(font_paths: list[Path], proof_dir: Path, fonts_dir: Path, 
             sec, patched = build_glyphset_section(fp, patched_path)
             page_sections.insert(0, sec)
             patched_href = rel_href(proof_dir, patched or fp)
+        if want_waterfall:
+            cmap, _ = _cmap_and_order([fp])
+            page_sections.insert(1 if want_glyphset else 0, build_latin_waterfall_section(cmap))
         html = build_html(family, fp.stem, rel_href(proof_dir, fonts_dir / fp.name), page_sections,
                           gate, build, patched_href, chrome, extra_css)
         out = proof_dir / f"{fp.stem}.html"
