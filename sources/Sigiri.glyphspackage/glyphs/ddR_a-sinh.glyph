@@ -1,0 +1,56 @@
+{
+glyphname = "ddRa-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (630,0);
+ref = "rasign-sinh";
+},
+{
+alignment = -1;
+ref = "dda-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -178;
+width = 105;
+},
+{
+position = 1;
+width = 96;
+},
+{
+position = 347;
+width = 109;
+},
+{
+position = 512;
+width = 105;
+}
+);
+vhints = (
+{
+position = 40;
+width = 154;
+},
+{
+position = 289;
+width = 69;
+},
+{
+position = 456;
+width = 166;
+}
+);
+};
+};
+width = 642;
+}
+);
+}

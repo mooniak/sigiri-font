@@ -1,0 +1,52 @@
+{
+glyphname = "ssUu-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (689,0);
+ref = "uusign-sinh.alt3";
+},
+{
+alignment = -1;
+ref = "ssa-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 1;
+width = 104;
+},
+{
+position = 261;
+width = 79;
+},
+{
+position = 383;
+width = 106;
+}
+);
+vhints = (
+{
+position = 20;
+width = 160;
+},
+{
+position = 508;
+width = 143;
+},
+{
+position = 518;
+width = 161;
+}
+);
+};
+};
+width = 699;
+}
+);
+}

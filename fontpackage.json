@@ -1,15 +1,16 @@
 {
-  "name": "My Font",
-  "id": "my-font",
+  "name": "Sigiri",
+  "id": "sigiri",
   "type": "family",
   "designer": [
-    "Mooniak"
+    "Lalith Rathnayake"
   ],
   "scripts": [
-    "Latn"
+    "Sinh"
   ],
-  "description": "A short description of the font goes here.",
+  "description": "A Sinhala typeface designed by Lalith Rathnayake.",
   "license": "OFL-1.1",
+  "tier": "free",
   "channels": [
     "canary",
     "dev",
@@ -17,11 +18,11 @@
   ],
   "versions_provider": "tags",
   "repository": {
-    "url": "https://github.com/mooniak/my-font",
+    "url": "https://github.com/mooniak/sigiri-font",
     "type": "git"
   },
-  "homepage_url": "https://src.mooniak.com/my-font/",
-  "issues_url": "https://github.com/mooniak/my-font/issues/",
+  "homepage_url": "https://src.mooniak.com/sigiri-font/",
+  "issues_url": "https://github.com/mooniak/sigiri-font/issues/",
   "funding_url": "https://opencollective.com/akuruxyz/projects/lanka-font-library",
   "foundry": {
     "name": "mooniak",
@@ -31,7 +32,7 @@
   },
   "designers": [
     {
-      "name": "",
+      "name": "Lalith Rathnayake",
       "email": "",
       "url": ""
     }
@@ -59,14 +60,14 @@
     "intended_usage": "body text",
     "figures": "normal",
     "languages": [
-      "en_US"
+      "si_LK"
     ],
     "related_fonts": []
   },
   "directory": {
     "listed": true,
     "display_texts": {
-      "en_US": ""
+      "si_LK": "දැරණියගලට ඉහල අහසේ දඟකරන වලාපෙළ මවනා සොඳුරු දසුන."
     },
     "display_images": {
       "banner": "",

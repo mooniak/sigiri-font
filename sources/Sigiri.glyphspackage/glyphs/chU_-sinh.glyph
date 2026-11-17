@@ -1,0 +1,64 @@
+{
+glyphname = "chU-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+ref = "cha-sinh";
+},
+{
+alignment = -1;
+pos = (683,0);
+ref = "usign-sinh.alt";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -174;
+width = 110;
+},
+{
+position = 1;
+width = 103;
+},
+{
+position = 213;
+width = 90;
+},
+{
+position = 260;
+width = 79;
+},
+{
+position = 396;
+width = 104;
+}
+);
+vhints = (
+{
+position = 20;
+width = 162;
+},
+{
+position = 509;
+width = 143;
+},
+{
+position = 516;
+width = 162;
+},
+{
+position = 540;
+width = 121;
+}
+);
+};
+};
+width = 698;
+}
+);
+}

@@ -1,0 +1,70 @@
+{
+glyphname = "mbUu-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+pos = (625,0);
+ref = "uusign-sinh";
+},
+{
+ref = "mba-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 0;
+width = 97;
+},
+{
+position = 170;
+width = 46;
+},
+{
+position = 217;
+width = 63;
+},
+{
+position = 336;
+width = 98;
+},
+{
+position = 511;
+width = 105;
+}
+);
+vhints = (
+{
+position = 20;
+width = 162;
+},
+{
+position = 222;
+width = 74;
+},
+{
+position = 311;
+width = 76;
+},
+{
+position = 332;
+width = 69;
+},
+{
+position = 439;
+width = 166;
+},
+{
+position = 444;
+width = 143;
+}
+);
+};
+};
+width = 625;
+}
+);
+}

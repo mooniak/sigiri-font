@@ -1,0 +1,39 @@
+{
+glyphname = one;
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+closed = 1;
+nodes = (
+(234,0,l),
+(70,0,l),
+(70,469,l),
+(20,469,l),
+(20,551,l),
+(234,615,l)
+);
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 0;
+width = 21;
+}
+);
+vhints = (
+{
+position = 70;
+width = 164;
+}
+);
+};
+};
+width = 274;
+}
+);
+unicode = 49;
+}

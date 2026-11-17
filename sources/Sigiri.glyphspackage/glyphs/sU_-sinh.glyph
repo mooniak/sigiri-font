@@ -1,0 +1,60 @@
+{
+glyphname = "sU-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (736,0);
+ref = "usign-sinh.alt";
+},
+{
+alignment = -1;
+ref = "sa-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -174;
+width = 110;
+},
+{
+position = 1;
+width = 105;
+},
+{
+position = 230;
+width = 76;
+},
+{
+position = 260;
+width = 79;
+},
+{
+position = 396;
+width = 104;
+}
+);
+vhints = (
+{
+position = 75;
+width = 163;
+},
+{
+position = 562;
+width = 143;
+},
+{
+position = 572;
+width = 161;
+}
+);
+};
+};
+width = 753;
+}
+);
+}

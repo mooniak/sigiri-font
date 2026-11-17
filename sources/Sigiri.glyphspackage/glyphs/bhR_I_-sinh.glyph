@@ -1,0 +1,80 @@
+{
+glyphname = "bhRI-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (780,-1);
+ref = "rasign-sinh.long";
+},
+{
+alignment = -1;
+ref = "bhI-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -179;
+width = 104;
+},
+{
+position = 0;
+width = 91;
+},
+{
+position = 1;
+width = 71;
+},
+{
+position = 1;
+width = 90;
+},
+{
+position = 209;
+width = 73;
+},
+{
+position = 278;
+width = 84;
+},
+{
+position = 391;
+width = 108;
+},
+{
+position = 402;
+width = 100;
+},
+{
+position = 589;
+width = 107;
+}
+);
+vhints = (
+{
+position = 58;
+width = 150;
+},
+{
+position = 352;
+width = 119;
+},
+{
+position = 538;
+width = 19;
+},
+{
+position = 641;
+width = 160;
+}
+);
+};
+};
+width = 821;
+}
+);
+}

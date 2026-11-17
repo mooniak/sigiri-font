@@ -1,0 +1,74 @@
+{
+glyphname = "kSs-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+pos = (1208,-3);
+ref = "virama-sinh";
+},
+{
+ref = "kSsa-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 0;
+width = 111;
+},
+{
+position = 1;
+width = 104;
+},
+{
+position = 261;
+width = 79;
+},
+{
+position = 378;
+width = 123;
+},
+{
+position = 383;
+width = 106;
+},
+{
+position = 386;
+width = 267;
+},
+{
+position = 394;
+width = 110;
+}
+);
+vhints = (
+{
+position = 250;
+width = 53;
+},
+{
+position = 348;
+width = 154;
+},
+{
+position = 529;
+width = 160;
+},
+{
+position = 1027;
+width = 161;
+},
+{
+position = 1040;
+width = 136;
+}
+);
+};
+};
+width = 1208;
+}
+);
+}

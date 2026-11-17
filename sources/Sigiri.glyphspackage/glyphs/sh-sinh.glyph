@@ -1,0 +1,67 @@
+{
+glyphname = "sh-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+pos = (730,-3);
+ref = "virama-sinh";
+},
+{
+pos = (1,0);
+ref = "sha-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -1;
+width = 99;
+},
+{
+position = 92;
+width = 61;
+},
+{
+position = 386;
+width = 267;
+},
+{
+position = 402;
+width = 100;
+}
+);
+vhints = (
+{
+position = 22;
+width = 160;
+},
+{
+position = 248;
+width = 119;
+},
+{
+position = 321;
+width = 121;
+},
+{
+position = 451;
+width = 66;
+},
+{
+position = 555;
+width = 160;
+},
+{
+position = 562;
+width = 136;
+}
+);
+};
+};
+width = 735;
+}
+);
+}

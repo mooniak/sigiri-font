@@ -1,0 +1,37 @@
+{
+glyphname = hyphen;
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+closed = 1;
+nodes = (
+(23,307,l),
+(289,307,l),
+(289,190,l),
+(23,190,l)
+);
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 190;
+width = 117;
+}
+);
+vhints = (
+{
+position = 23;
+width = 266;
+}
+);
+};
+};
+width = 312;
+}
+);
+unicode = 45;
+}

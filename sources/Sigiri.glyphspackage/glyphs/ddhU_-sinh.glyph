@@ -1,0 +1,66 @@
+{
+glyphname = "ddhU-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+pos = (631,0);
+ref = "usign-sinh";
+},
+{
+ref = "ddha-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -174;
+width = 110;
+},
+{
+position = 1;
+width = 96;
+},
+{
+position = 300;
+width = 59;
+},
+{
+position = 346;
+width = 110;
+},
+{
+position = 512;
+width = 106;
+}
+);
+vhints = (
+{
+position = 40;
+width = 154;
+},
+{
+position = 289;
+width = 78;
+},
+{
+position = 354;
+width = 53;
+},
+{
+position = 455;
+width = 166;
+},
+{
+position = 457;
+width = 143;
+}
+);
+};
+};
+width = 641;
+}
+);
+}

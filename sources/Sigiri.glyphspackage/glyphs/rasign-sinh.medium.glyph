@@ -1,0 +1,70 @@
+{
+glyphname = "rasign-sinh.medium";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+closed = 1;
+nodes = (
+(-571,-23,l),
+(-444.86,-64.812,o),
+(-368.037,-73,o),
+(-318,-73,cs),
+(-237,-73,o),
+(-136,-58,o),
+(-182,14,c),
+(-75,14,l),
+(4.426,-52.333,o),
+(-7.345,-178,o),
+(-329,-178,cs),
+(-471.03,-178,o),
+(-571,-128,o),
+(-571,-128,c)
+);
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -159;
+width = 72;
+},
+{
+position = -51;
+width = 21;
+},
+{
+position = -51;
+width = 51;
+},
+{
+position = 0;
+width = 21;
+}
+);
+vhints = (
+{
+position = -442;
+width = 56;
+},
+{
+position = -440;
+width = 56;
+},
+{
+position = -110;
+width = 61;
+},
+{
+position = -108;
+width = 61;
+}
+);
+};
+};
+width = 0;
+}
+);
+}

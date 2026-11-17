@@ -1,0 +1,78 @@
+{
+glyphname = "ll-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+ref = "lla-sinh";
+},
+{
+pos = (597,-3);
+ref = "virama-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -182;
+width = 101;
+},
+{
+position = -3;
+width = 88;
+},
+{
+position = 226;
+width = 70;
+},
+{
+position = 386;
+width = 267;
+},
+{
+position = 392;
+width = 108;
+}
+);
+vhints = (
+{
+position = 10;
+width = 147;
+},
+{
+position = 76;
+width = 126;
+},
+{
+position = 86;
+width = 126;
+},
+{
+position = 299;
+width = 75;
+},
+{
+position = 309;
+width = 75;
+},
+{
+position = 429;
+width = 136;
+},
+{
+position = 463;
+width = 119;
+},
+{
+position = 473;
+width = 119;
+}
+);
+};
+};
+width = 617;
+}
+);
+}

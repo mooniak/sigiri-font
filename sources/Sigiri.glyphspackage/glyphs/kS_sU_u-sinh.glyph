@@ -1,0 +1,72 @@
+{
+glyphname = "kSsUu-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (1196,0);
+ref = "uusign-sinh.alt3";
+},
+{
+alignment = -1;
+ref = "kSsa-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 0;
+width = 111;
+},
+{
+position = 1;
+width = 104;
+},
+{
+position = 261;
+width = 79;
+},
+{
+position = 378;
+width = 123;
+},
+{
+position = 383;
+width = 106;
+},
+{
+position = 394;
+width = 110;
+}
+);
+vhints = (
+{
+position = 250;
+width = 53;
+},
+{
+position = 348;
+width = 154;
+},
+{
+position = 529;
+width = 160;
+},
+{
+position = 1015;
+width = 143;
+},
+{
+position = 1027;
+width = 161;
+}
+);
+};
+};
+width = 1208;
+}
+);
+}

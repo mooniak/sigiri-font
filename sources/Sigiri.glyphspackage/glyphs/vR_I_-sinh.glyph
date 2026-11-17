@@ -1,0 +1,76 @@
+{
+glyphname = "vRI-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (630,0);
+ref = "rasign-sinh";
+},
+{
+alignment = -1;
+ref = "vI-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -178;
+width = 105;
+},
+{
+position = 0;
+width = 108;
+},
+{
+position = 246;
+width = 74;
+},
+{
+position = 346;
+width = 110;
+},
+{
+position = 475;
+width = 101;
+},
+{
+position = 646;
+width = 104;
+},
+{
+position = 680;
+width = 20;
+}
+);
+vhints = (
+{
+position = 6;
+width = 134;
+},
+{
+position = 7;
+width = 162;
+},
+{
+position = 19;
+width = 134;
+},
+{
+position = 426;
+width = 166;
+},
+{
+position = 439;
+width = 166;
+}
+);
+};
+};
+width = 625;
+}
+);
+}

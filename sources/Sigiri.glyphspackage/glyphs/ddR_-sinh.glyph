@@ -1,0 +1,84 @@
+{
+glyphname = "ddR-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (630,0);
+ref = "rasign-sinh";
+},
+{
+alignment = -1;
+ref = "dd-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -178;
+width = 105;
+},
+{
+position = 1;
+width = 96;
+},
+{
+position = 328;
+width = 109;
+},
+{
+position = 475;
+width = 105;
+},
+{
+position = 642;
+width = 108;
+},
+{
+position = 680;
+width = 20;
+}
+);
+vhints = (
+{
+position = 19;
+width = 53;
+},
+{
+position = 39;
+width = 154;
+},
+{
+position = 58;
+width = 137;
+},
+{
+position = 59;
+width = 137;
+},
+{
+position = 288;
+width = 69;
+},
+{
+position = 289;
+width = 69;
+},
+{
+position = 455;
+width = 166;
+},
+{
+position = 456;
+width = 166;
+}
+);
+};
+};
+width = 642;
+}
+);
+}

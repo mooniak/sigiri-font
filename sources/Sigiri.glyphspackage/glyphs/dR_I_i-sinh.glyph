@@ -1,0 +1,77 @@
+{
+glyphname = "dRIi-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (0,1);
+ref = "dRa-sinh";
+},
+{
+alignment = -1;
+pos = (4,-1);
+ref = "iisign-sinh.alt3";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -177;
+width = 107;
+},
+{
+position = 2;
+width = 99;
+},
+{
+position = 268;
+width = 84;
+},
+{
+position = 401;
+width = 101;
+},
+{
+position = 446;
+width = 45;
+},
+{
+position = 554;
+width = 83;
+}
+);
+vhints = (
+{
+position = -143;
+width = 59;
+},
+{
+position = -9;
+width = 47;
+},
+{
+position = 21;
+width = 161;
+},
+{
+position = 92;
+width = 59;
+},
+{
+position = 339;
+width = 127;
+},
+{
+position = 369;
+width = 109;
+}
+);
+};
+};
+width = 498;
+}
+);
+}

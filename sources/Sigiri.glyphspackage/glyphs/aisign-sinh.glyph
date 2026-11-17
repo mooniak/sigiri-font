@@ -1,0 +1,83 @@
+{
+category = Mark;
+glyphname = "aisign-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+ref = "esign-sinh";
+},
+{
+alignment = -1;
+pos = (498,0);
+ref = "esign-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 0;
+width = 88;
+},
+{
+position = 269;
+width = 84;
+},
+{
+position = 415;
+width = 86;
+}
+);
+vhints = (
+{
+position = 18;
+width = 161;
+},
+{
+position = 20;
+width = 161;
+},
+{
+position = 334;
+width = 159;
+},
+{
+position = 336;
+width = 159;
+},
+{
+position = 416;
+width = 73;
+},
+{
+position = 516;
+width = 161;
+},
+{
+position = 518;
+width = 161;
+},
+{
+position = 832;
+width = 159;
+},
+{
+position = 834;
+width = 159;
+},
+{
+position = 914;
+width = 73;
+}
+);
+};
+};
+width = 1013;
+}
+);
+subCategory = Spacing;
+unicode = 3547;
+}

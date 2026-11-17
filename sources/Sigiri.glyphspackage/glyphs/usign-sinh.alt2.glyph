@@ -1,0 +1,40 @@
+{
+glyphname = "usign-sinh.alt2";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+closed = 1;
+nodes = (
+(-553,-64,l),
+(-174,-64,l),
+(-174,41,l),
+(-100,50,o),
+(-44,149,o),
+(-31,208,c),
+(-31,-174,l),
+(-553,-174,l)
+);
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -174;
+width = 110;
+}
+);
+vhints = (
+{
+position = -174;
+width = 143;
+}
+);
+};
+};
+width = 4;
+}
+);
+}

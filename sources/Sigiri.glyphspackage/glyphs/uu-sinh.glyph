@@ -1,0 +1,61 @@
+{
+glyphname = "uu-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (514,1);
+ref = "vocaliclsign-sinh";
+},
+{
+alignment = -1;
+ref = "u-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -171;
+width = 97;
+},
+{
+position = 2;
+width = 71;
+},
+{
+position = 267;
+width = 84;
+},
+{
+position = 366;
+width = 135;
+},
+{
+position = 400;
+width = 101;
+}
+);
+vhints = (
+{
+position = 21;
+width = 161;
+},
+{
+position = 529;
+width = 69;
+},
+{
+position = 681;
+width = 144;
+}
+);
+};
+};
+width = 845;
+}
+);
+unicode = 3468;
+}

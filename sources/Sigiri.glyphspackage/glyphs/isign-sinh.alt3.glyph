@@ -1,0 +1,50 @@
+{
+glyphname = "isign-sinh.alt3";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+closed = 1;
+nodes = (
+(573,573,o),
+(497,590,o),
+(422,590,cs),
+(327,590,o),
+(282,567,o),
+(315,505,c),
+(225,505,l),
+(157,563,o),
+(179,697,o),
+(424,697,cs),
+(546.548,697,o),
+(642,648,o),
+(642,648,c),
+(642,543,l)
+);
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 553;
+width = 83;
+}
+);
+vhints = (
+{
+position = -149;
+width = 59;
+},
+{
+position = 88;
+width = 57;
+}
+);
+};
+};
+width = 674;
+}
+);
+}

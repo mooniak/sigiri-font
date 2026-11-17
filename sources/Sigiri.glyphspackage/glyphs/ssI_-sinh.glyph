@@ -1,0 +1,57 @@
+{
+glyphname = "ssI-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (669,-1);
+ref = "isign-sinh.alt";
+},
+{
+alignment = -1;
+pos = (-1,0);
+ref = "ssa-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 1;
+width = 104;
+},
+{
+position = 261;
+width = 79;
+},
+{
+position = 383;
+width = 106;
+},
+{
+position = 589;
+width = 107;
+}
+);
+vhints = (
+{
+position = 19;
+width = 160;
+},
+{
+position = 51;
+width = 140;
+},
+{
+position = 517;
+width = 161;
+}
+);
+};
+};
+width = 699;
+}
+);
+}

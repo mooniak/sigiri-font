@@ -1,0 +1,64 @@
+{
+glyphname = "nnUu-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (858,0);
+ref = "uusign-sinh.alt3";
+},
+{
+alignment = -1;
+ref = "nna-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -1;
+width = 114;
+},
+{
+position = 1;
+width = 83;
+},
+{
+position = 380;
+width = 120;
+},
+{
+position = 404;
+width = 97;
+}
+);
+vhints = (
+{
+position = 42;
+width = 148;
+},
+{
+position = 364;
+width = 167;
+},
+{
+position = 560;
+width = 71;
+},
+{
+position = 677;
+width = 143;
+},
+{
+position = 696;
+width = 148;
+}
+);
+};
+};
+width = 864;
+}
+);
+}

@@ -1,0 +1,65 @@
+{
+glyphname = "yasign_isign-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (-148,-1);
+ref = "isign-sinh.alt3";
+},
+{
+alignment = -1;
+pos = (-3,0);
+ref = "yasign-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 1;
+width = 96;
+},
+{
+position = 35;
+width = 83;
+},
+{
+position = 260;
+width = 82;
+},
+{
+position = 395;
+width = 103;
+},
+{
+position = 424;
+width = 78;
+},
+{
+position = 552;
+width = 83;
+}
+);
+vhints = (
+{
+position = -297;
+width = 59;
+},
+{
+position = -60;
+width = 57;
+},
+{
+position = 387;
+width = 136;
+}
+);
+};
+};
+width = 543;
+}
+);
+}

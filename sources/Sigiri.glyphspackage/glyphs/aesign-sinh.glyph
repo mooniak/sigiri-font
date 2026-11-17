@@ -1,0 +1,63 @@
+{
+category = Mark;
+glyphname = "aesign-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+closed = 1;
+nodes = (
+(18,199,ls),
+(18,305,o),
+(123.271,364.64,o),
+(162,399,c),
+(18,399,l),
+(18,479,l),
+(298,479,l),
+(298,411,l),
+(203,322,o),
+(155,252,o),
+(155,175,cs),
+(155,124,o),
+(171,83,o),
+(223,83,cs),
+(248,83,o),
+(271,88,o),
+(298,100,c),
+(298,23,l),
+(259,8,o),
+(220,0,o),
+(187,0,cs),
+(68,0,o),
+(18,64,o),
+(18,151,cs)
+);
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 0;
+width = 83;
+},
+{
+position = 399;
+width = 80;
+}
+);
+vhints = (
+{
+position = 18;
+width = 137;
+}
+);
+};
+};
+width = 318;
+}
+);
+subCategory = Spacing;
+unicode = 3536;
+}

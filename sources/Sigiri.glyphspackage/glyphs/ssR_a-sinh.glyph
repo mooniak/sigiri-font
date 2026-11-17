@@ -1,0 +1,81 @@
+{
+glyphname = "ssRa-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (-1,0);
+ref = "ssa-sinh";
+},
+{
+alignment = -1;
+pos = (667,0);
+ref = "rasign-sinh.short";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -159;
+width = 72;
+},
+{
+position = -51;
+width = 21;
+},
+{
+position = -51;
+width = 51;
+},
+{
+position = 0;
+width = 21;
+},
+{
+position = 1;
+width = 104;
+},
+{
+position = 261;
+width = 79;
+},
+{
+position = 383;
+width = 106;
+}
+);
+vhints = (
+{
+position = 19;
+width = 160;
+},
+{
+position = 225;
+width = 56;
+},
+{
+position = 227;
+width = 56;
+},
+{
+position = 517;
+width = 161;
+},
+{
+position = 557;
+width = 61;
+},
+{
+position = 559;
+width = 61;
+}
+);
+};
+};
+width = 699;
+}
+);
+}

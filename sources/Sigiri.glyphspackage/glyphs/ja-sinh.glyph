@@ -1,0 +1,66 @@
+{
+glyphname = "ja-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+closed = 1;
+nodes = (
+(376,437,o),
+(399.704,494.517,o),
+(444,527,cs),
+(504,571,o),
+(541,587,o),
+(541,649,c),
+(662,649,l),
+(661,592,o),
+(621,528,o),
+(572,496,c),
+(434,482,o),
+(376,437,o),
+(376,437,c)
+);
+},
+{
+pos = (-1,0);
+ref = "pa-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 1;
+width = 103;
+},
+{
+position = 260;
+width = 83;
+},
+{
+position = 396;
+width = 104;
+}
+);
+vhints = (
+{
+position = 19;
+width = 162;
+},
+{
+position = 514;
+width = 162;
+},
+{
+position = 541;
+width = 121;
+}
+);
+};
+};
+width = 699;
+}
+);
+unicode = 3490;
+}

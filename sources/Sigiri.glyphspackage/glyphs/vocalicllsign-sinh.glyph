@@ -1,0 +1,19 @@
+{
+category = Mark;
+glyphname = "vocalicllsign-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+ref = "vocaliclsign-sinh";
+slant = (4.0042,0);
+}
+);
+width = 309;
+}
+);
+subCategory = Spacing;
+unicode = 3571;
+}

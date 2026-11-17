@@ -1,0 +1,31 @@
+{
+glyphname = softhyphen;
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+ref = hyphen;
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 190;
+width = 117;
+}
+);
+vhints = (
+{
+position = 23;
+width = 266;
+}
+);
+};
+};
+width = 462;
+}
+);
+unicode = 173;
+}

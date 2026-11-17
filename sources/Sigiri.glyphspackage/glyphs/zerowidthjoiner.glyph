@@ -1,0 +1,48 @@
+{
+glyphname = zerowidthjoiner;
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+closed = 1;
+nodes = (
+(26,640,l),
+(147,520,l),
+(121,493,l),
+(20,596,l),
+(20,10,l),
+(-20,10,l),
+(-20,596,l),
+(-121,493,l),
+(-147,520,l),
+(-26,640,l),
+(-147,759,l),
+(-121,784,l),
+(0,663,l),
+(121,784,l),
+(147,759,l)
+);
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 764;
+width = 20;
+}
+);
+vhints = (
+{
+position = -20;
+width = 40;
+}
+);
+};
+};
+width = 10;
+}
+);
+unicode = 8205;
+}

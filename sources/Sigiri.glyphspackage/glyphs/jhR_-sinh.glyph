@@ -1,0 +1,100 @@
+{
+glyphname = "jhR-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (1133,0);
+ref = "rasign-sinh";
+},
+{
+alignment = -1;
+ref = "jh-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -178;
+width = 105;
+},
+{
+position = 0;
+width = 111;
+},
+{
+position = 1;
+width = 96;
+},
+{
+position = 332;
+width = 103;
+},
+{
+position = 378;
+width = 123;
+},
+{
+position = 394;
+width = 110;
+},
+{
+position = 475;
+width = 105;
+},
+{
+position = 642;
+width = 108;
+},
+{
+position = 680;
+width = 20;
+}
+);
+vhints = (
+{
+position = 250;
+width = 53;
+},
+{
+position = 348;
+width = 154;
+},
+{
+position = 516;
+width = 162;
+},
+{
+position = 531;
+width = 162;
+},
+{
+position = 540;
+width = 136;
+},
+{
+position = 769;
+width = 78;
+},
+{
+position = 784;
+width = 78;
+},
+{
+position = 935;
+width = 166;
+},
+{
+position = 950;
+width = 166;
+}
+);
+};
+};
+width = 1136;
+}
+);
+}

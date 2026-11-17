@@ -1,0 +1,77 @@
+{
+glyphname = "ttRIi-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (622,0);
+ref = "rasign-sinh";
+},
+{
+alignment = -1;
+pos = (1,0);
+ref = "ttIi-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -178;
+width = 105;
+},
+{
+position = 0;
+width = 108;
+},
+{
+position = 332;
+width = 103;
+},
+{
+position = 475;
+width = 101;
+},
+{
+position = 553;
+width = 49;
+},
+{
+position = 646;
+width = 105;
+}
+);
+vhints = (
+{
+position = 15;
+width = 134;
+},
+{
+position = 16;
+width = 162;
+},
+{
+position = 21;
+width = 134;
+},
+{
+position = 435;
+width = 166;
+},
+{
+position = 441;
+width = 166;
+},
+{
+position = 492;
+width = 93;
+}
+);
+};
+};
+width = 627;
+}
+);
+}

@@ -1,0 +1,72 @@
+{
+glyphname = "kI-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (727,0);
+ref = "isign-sinh.alt";
+},
+{
+alignment = -1;
+ref = "ka-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 0;
+width = 111;
+},
+{
+position = 1;
+width = 71;
+},
+{
+position = 305;
+width = 13;
+},
+{
+position = 378;
+width = 123;
+},
+{
+position = 394;
+width = 110;
+},
+{
+position = 590;
+width = 107;
+}
+);
+vhints = (
+{
+position = 20;
+width = 186;
+},
+{
+position = 109;
+width = 140;
+},
+{
+position = 250;
+width = 53;
+},
+{
+position = 348;
+width = 154;
+},
+{
+position = 585;
+width = 160;
+}
+);
+};
+};
+width = 765;
+}
+);
+}

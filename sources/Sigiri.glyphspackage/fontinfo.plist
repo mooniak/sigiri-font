@@ -1,0 +1,809 @@
+{
+.appVersion = "3532";
+.formatVersion = 3;
+customParameters = (
+{
+name = fsType;
+value = (
+);
+},
+{
+name = vendorID;
+value = MNIK;
+}
+);
+date = "2026-11-17 06:30:36 +0000";
+familyName = Sigiri;
+featurePrefixes = (
+{
+code = "languagesystem DFLT dflt;
+languagesystem sinh dflt;
+";
+name = Languagesystems;
+},
+{
+code = "# GSUB 
+lookup sin_akhands {
+  lookupflag 0;
+    sub \\da-sinh \\virama-sinh \\zerowidthjoiner \\dha-sinh  by \\dDha-sinh;
+    sub \\da-sinh \\virama-sinh \\zerowidthjoiner \\va-sinh  by \\dVa-sinh;
+    sub \\ga-sinh \\virama-sinh \\zerowidthjoiner \\dha-sinh  by \\gDha-sinh;
+    sub \\ka-sinh \\virama-sinh \\zerowidthjoiner \\ssa-sinh  by \\kSsa-sinh;
+    sub \\ka-sinh \\virama-sinh \\zerowidthjoiner \\va-sinh  by \\kVa-sinh;
+    sub \\na-sinh \\virama-sinh \\zerowidthjoiner \\da-sinh  by \\nDa-sinh;
+    sub \\na-sinh \\virama-sinh \\zerowidthjoiner \\dha-sinh  by \\nDha-sinh;
+    sub \\na-sinh \\virama-sinh \\zerowidthjoiner \\tha-sinh  by \\nTha-sinh;
+    sub \\na-sinh \\virama-sinh \\zerowidthjoiner \\va-sinh  by \\nVa-sinh;
+    sub \\ta-sinh \\virama-sinh \\zerowidthjoiner \\tha-sinh  by \\tTha-sinh;
+    sub \\ta-sinh \\virama-sinh \\zerowidthjoiner \\va-sinh  by \\tVa-sinh;
+    sub \\tta-sinh \\virama-sinh \\zerowidthjoiner \\ttha-sinh  by \\ttTtha-sinh;
+} sin_akhands;
+
+lookup sin_reph {
+  lookupflag 0;
+    sub \\ra-sinh \\virama-sinh \\zerowidthjoiner  by \\repha-sinh;
+} sin_reph;
+
+lookup sin_yansaya {
+  lookupflag 0;
+    sub \\virama-sinh \\zerowidthjoiner \\ya-sinh  by \\yasign-sinh;
+} sin_yansaya;
+
+lookup sin_rakar {
+  lookupflag 0;
+    sub \\ba-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\bRa-sinh;
+    sub \\bha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\bhRa-sinh;
+    sub \\ca-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\cRa-sinh;
+    sub \\da-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\dRa-sinh;
+    sub \\dda-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\ddRa-sinh;
+    sub \\dha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\dhRa-sinh;
+    sub \\fa-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\fRa-sinh;
+    sub \\ga-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\gRa-sinh;
+    sub \\gha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\ghRa-sinh;
+    sub \\ha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\hRa-sinh;
+    sub \\ja-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\jRa-sinh;
+    sub \\jha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\jhRa-sinh;
+    sub \\jnya-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\jnyRa-sinh;
+    sub \\ka-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\kRa-sinh;
+    sub \\kha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\khRa-sinh;
+    sub \\ma-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\mRa-sinh;
+    sub \\nDa-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\nDRa-sinh;
+    sub \\nyja-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\nyjRa-sinh;
+    sub \\nya-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\nyRa-sinh;
+    sub \\pa-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\pRa-sinh;
+    sub \\sa-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\sRa-sinh;
+    sub \\sha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\shRa-sinh;
+    sub \\ssa-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\ssRa-sinh;
+    sub \\ta-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\tRa-sinh;
+    sub \\tta-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\ttRa-sinh;
+    sub \\va-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\vRa-sinh;
+} sin_rakar;
+
+lookup sin_split_matra {
+  lookupflag 0;
+    sub \\ausign-sinh by \\vocaliclsign-sinh ;
+    sub \\eesign-sinh by \\virama-sinh ;
+    sub \\osign-sinh by \\aasign-sinh ;
+    sub \\oosign-sinh by \\aasign_virama-sinh ;
+} sin_split_matra;
+
+lookup sin_abvs_1 {
+  lookupflag 0;
+    sub \\ba-sinh \\isign-sinh  by \\bI-sinh;
+    sub \\bha-sinh \\isign-sinh  by \\bhI-sinh;
+    sub \\ca-sinh \\isign-sinh  by \\cI-sinh;
+    sub \\cha-sinh \\isign-sinh  by \\chI-sinh;
+    sub \\da-sinh \\isign-sinh  by \\dI-sinh;
+    sub \\dda-sinh \\isign-sinh  by \\ddI-sinh;
+    sub \\ddha-sinh \\isign-sinh  by \\ddhI-sinh;
+    sub \\dha-sinh \\isign-sinh  by \\dhI-sinh;
+    sub \\fa-sinh \\isign-sinh  by \\fI-sinh;
+    sub \\ga-sinh \\isign-sinh  by \\gI-sinh;
+    sub \\gha-sinh \\isign-sinh  by \\ghI-sinh;
+    sub \\ha-sinh \\isign-sinh  by \\hI-sinh;
+    sub \\ja-sinh \\isign-sinh  by \\jI-sinh;
+    sub \\jha-sinh \\isign-sinh  by \\jhI-sinh;
+    sub \\jnya-sinh \\isign-sinh  by \\jnyI-sinh;
+    sub \\ka-sinh \\isign-sinh  by \\kI-sinh;
+    sub \\kha-sinh \\isign-sinh  by \\khI-sinh;
+    sub \\la-sinh \\isign-sinh  by \\lI-sinh;
+    sub \\lla-sinh \\isign-sinh  by \\llI-sinh;
+    sub \\ma-sinh \\isign-sinh  by \\mI-sinh;
+    sub \\mba-sinh \\isign-sinh  by \\mbI-sinh;
+    sub \\na-sinh \\isign-sinh  by \\nI-sinh;
+    sub \\nda-sinh \\isign-sinh  by \\ndI-sinh;
+    sub \\nyja-sinh \\isign-sinh  by \\nyjI-sinh;
+    sub \\nga-sinh \\isign-sinh  by \\ngI-sinh;
+    sub \\nna-sinh \\isign-sinh  by \\nnI-sinh;
+    sub \\nndda-sinh \\isign-sinh  by \\nnddI-sinh;
+    sub \\nnga-sinh \\isign-sinh  by \\nngI-sinh;
+    sub \\nya-sinh \\isign-sinh  by \\nyI-sinh;
+    sub \\pa-sinh \\isign-sinh  by \\pI-sinh;
+    sub \\pha-sinh \\isign-sinh  by \\phI-sinh;
+    sub \\ra-sinh \\isign-sinh  by \\rI-sinh;
+    sub \\sa-sinh \\isign-sinh  by \\sI-sinh;
+    sub \\sha-sinh \\isign-sinh  by \\shI-sinh;
+    sub \\ssa-sinh \\isign-sinh  by \\ssI-sinh;
+    sub \\ta-sinh \\isign-sinh  by \\tI-sinh;
+    sub \\tha-sinh \\isign-sinh  by \\thI-sinh;
+    sub \\tta-sinh \\isign-sinh  by \\ttI-sinh;
+    sub \\ttha-sinh \\isign-sinh  by \\tthI-sinh;
+    sub \\va-sinh \\isign-sinh  by \\vI-sinh;
+    sub \\ya-sinh \\isign-sinh  by \\yI-sinh;
+    sub \\yasign-sinh \\isign-sinh  by \\yasign_isign-sinh;
+} sin_abvs_1;
+
+lookup sin_abvs_2 {
+  lookupflag 0;
+    sub \\ba-sinh \\iisign-sinh  by \\bIi-sinh;
+    sub \\bha-sinh \\iisign-sinh  by \\bhIi-sinh;
+    sub \\ca-sinh \\iisign-sinh  by \\cIi-sinh;
+    sub \\cha-sinh \\iisign-sinh  by \\chIi-sinh;
+    sub \\da-sinh \\iisign-sinh  by \\dIi-sinh;
+    sub \\dda-sinh \\iisign-sinh  by \\ddIi-sinh;
+    sub \\ddha-sinh \\iisign-sinh  by \\ddhIi-sinh;
+    sub \\dha-sinh \\iisign-sinh  by \\dhIi-sinh;
+    sub \\fa-sinh \\iisign-sinh  by \\fIi-sinh;
+    sub \\ga-sinh \\iisign-sinh  by \\gIi-sinh;
+    sub \\gha-sinh \\iisign-sinh  by \\ghIi-sinh;
+    sub \\ha-sinh \\iisign-sinh  by \\hIi-sinh;
+    sub \\ja-sinh \\iisign-sinh  by \\jIi-sinh;
+    sub \\jha-sinh \\iisign-sinh  by \\jhIi-sinh;
+    sub \\jnya-sinh \\iisign-sinh  by \\jnyIi-sinh;
+    sub \\ka-sinh \\iisign-sinh  by \\kIi-sinh;
+    sub \\kha-sinh \\iisign-sinh  by \\khIi-sinh;
+    sub \\la-sinh \\iisign-sinh  by \\lIi-sinh;
+    sub \\lla-sinh \\iisign-sinh  by \\llIi-sinh;
+    sub \\ma-sinh \\iisign-sinh  by \\mIi-sinh;
+    sub \\mba-sinh \\iisign-sinh  by \\mbIi-sinh;
+    sub \\na-sinh \\iisign-sinh  by \\nIi-sinh;
+    sub \\nda-sinh \\iisign-sinh  by \\ndIi-sinh;
+    sub \\nyja-sinh \\iisign-sinh  by \\nyjIi-sinh;
+    sub \\nga-sinh \\iisign-sinh  by \\ngIi-sinh;
+    sub \\nna-sinh \\iisign-sinh  by \\nnIi-sinh;
+    sub \\nndda-sinh \\iisign-sinh  by \\nnddIi-sinh;
+    sub \\nnga-sinh \\iisign-sinh  by \\nngIi-sinh;
+    sub \\nya-sinh \\iisign-sinh  by \\nyIi-sinh;
+    sub \\pa-sinh \\iisign-sinh  by \\pIi-sinh;
+    sub \\pha-sinh \\iisign-sinh  by \\phIi-sinh;
+    sub \\ra-sinh \\iisign-sinh  by \\rIi-sinh;
+    sub \\sa-sinh \\iisign-sinh  by \\sIi-sinh;
+    sub \\sha-sinh \\iisign-sinh  by \\shIi-sinh;
+    sub \\ssa-sinh \\iisign-sinh  by \\ssIi-sinh;
+    sub \\ta-sinh \\iisign-sinh  by \\tIi-sinh;
+    sub \\tha-sinh \\iisign-sinh  by \\thIi-sinh;
+    sub \\tta-sinh \\iisign-sinh  by \\ttIi-sinh;
+    sub \\ttha-sinh \\iisign-sinh  by \\tthIi-sinh;
+    sub \\va-sinh \\iisign-sinh  by \\vIi-sinh;
+    sub \\ya-sinh \\iisign-sinh  by \\yIi-sinh;
+    sub \\yasign-sinh \\iisign-sinh  by \\yasign_iisign-sinh;
+} sin_abvs_2;
+
+lookup sin_abvs_3 {
+  lookupflag 0;
+    sub \\bRa-sinh \\isign-sinh  by \\bRI-sinh;
+    sub \\bhRa-sinh \\isign-sinh  by \\bhRI-sinh;
+    sub \\cRa-sinh \\isign-sinh  by \\cRI-sinh;
+    sub \\dRa-sinh \\isign-sinh  by \\dRI-sinh;
+    sub \\ddRa-sinh \\isign-sinh  by \\ddRI-sinh;
+    sub \\dhRa-sinh \\isign-sinh  by \\dhRI-sinh;
+    sub \\gRa-sinh \\isign-sinh  by \\gRI-sinh;
+    sub \\ghRa-sinh \\isign-sinh  by \\ghRI-sinh;
+    sub \\hRa-sinh \\isign-sinh  by \\hRI-sinh;
+    sub \\jRa-sinh \\isign-sinh  by \\jRI-sinh;
+    sub \\jhRa-sinh \\isign-sinh  by \\jhRI-sinh;
+    sub \\jnyRa-sinh \\isign-sinh  by \\jnyRI-sinh;
+    sub \\kRa-sinh \\isign-sinh  by \\kRI-sinh;
+    sub \\khRa-sinh \\isign-sinh  by \\khRI-sinh;
+    sub \\mRa-sinh \\isign-sinh  by \\mRI-sinh;
+    sub \\nyRa-sinh \\isign-sinh  by \\nyRI-sinh;
+    sub \\pRa-sinh \\isign-sinh  by \\pRI-sinh;
+    sub \\sRa-sinh \\isign-sinh  by \\sRI-sinh;
+    sub \\shRa-sinh \\isign-sinh  by \\shRI-sinh;
+    sub \\tRa-sinh \\isign-sinh  by \\tRI-sinh;
+    sub \\ttRa-sinh \\isign-sinh  by \\ttRI-sinh;
+    sub \\vRa-sinh \\isign-sinh  by \\vRI-sinh;
+} sin_abvs_3;
+
+lookup sin_abvs_4 {
+  lookupflag 0;
+    sub \\bRa-sinh \\iisign-sinh  by \\bRIi-sinh;
+    sub \\bhRa-sinh \\iisign-sinh  by \\bhRIi-sinh;
+    sub \\cRa-sinh \\iisign-sinh  by \\cRIi-sinh;
+    sub \\dRa-sinh \\iisign-sinh  by \\dRIi-sinh;
+    sub \\ddRa-sinh \\iisign-sinh  by \\ddRIi-sinh;
+    sub \\dhRa-sinh \\iisign-sinh  by \\dhRIi-sinh;
+    sub \\gRa-sinh \\iisign-sinh  by \\gRIi-sinh;
+    sub \\ghRa-sinh \\iisign-sinh  by \\ghRIi-sinh;
+    sub \\hRa-sinh \\iisign-sinh  by \\hRIi-sinh;
+    sub \\jRa-sinh \\iisign-sinh  by \\jRIi-sinh;
+    sub \\jhRa-sinh \\iisign-sinh  by \\jhRIi-sinh;
+    sub \\jnyRa-sinh \\iisign-sinh  by \\jnyRIi-sinh;
+    sub \\kRa-sinh \\iisign-sinh  by \\kRIi-sinh;
+    sub \\khRa-sinh \\iisign-sinh  by \\khRIi-sinh;
+    sub \\mRa-sinh \\iisign-sinh  by \\mRIi-sinh;
+    sub \\nyRa-sinh \\iisign-sinh  by \\nyRIi-sinh;
+    sub \\pRa-sinh \\iisign-sinh  by \\pRIi-sinh;
+    sub \\sRa-sinh \\iisign-sinh  by \\sRIi-sinh;
+    sub \\shRa-sinh \\iisign-sinh  by \\shRIi-sinh;
+    sub \\tRa-sinh \\iisign-sinh  by \\tRIi-sinh;
+    sub \\ttRa-sinh \\iisign-sinh  by \\ttRIi-sinh;
+    sub \\vRa-sinh \\iisign-sinh  by \\vRIi-sinh;
+} sin_abvs_4;
+
+lookup sin_abvs_5 {
+  lookupflag 0;
+    sub \\dDha-sinh \\isign-sinh  by \\dDhI-sinh;
+    sub \\dVa-sinh \\isign-sinh  by \\dVI-sinh;
+    sub \\kSsa-sinh \\isign-sinh  by \\kSsI-sinh;
+    sub \\kVa-sinh \\isign-sinh  by \\kVI-sinh;
+    sub \\nDa-sinh \\isign-sinh  by \\nDI-sinh;
+    sub \\nDha-sinh \\isign-sinh  by \\nDhI-sinh;
+    sub \\nTha-sinh \\isign-sinh  by \\nThI-sinh;
+    sub \\nVa-sinh \\isign-sinh  by \\nVI-sinh;
+    sub \\tTha-sinh \\isign-sinh  by \\tThI-sinh;
+    sub \\tVa-sinh \\isign-sinh  by \\tVI-sinh;
+    sub \\ttTtha-sinh \\isign-sinh  by \\ttTthI-sinh;
+} sin_abvs_5;
+
+lookup sin_abvs_6 {
+  lookupflag 0;
+    sub \\dDha-sinh \\iisign-sinh  by \\dDhIi-sinh;
+    sub \\dVa-sinh \\iisign-sinh  by \\dVIi-sinh;
+    sub \\kSsa-sinh \\iisign-sinh  by \\kSsIi-sinh;
+    sub \\kVa-sinh \\iisign-sinh  by \\kVIi-sinh;
+    sub \\nDa-sinh \\iisign-sinh  by \\nDIi-sinh;
+    sub \\nDha-sinh \\iisign-sinh  by \\nDhIi-sinh;
+    sub \\nTha-sinh \\iisign-sinh  by \\nThIi-sinh;
+    sub \\nVa-sinh \\iisign-sinh  by \\nVIi-sinh;
+    sub \\tTha-sinh \\iisign-sinh  by \\tThIi-sinh;
+    sub \\tVa-sinh \\iisign-sinh  by \\tVIi-sinh;
+    sub \\ttTtha-sinh \\iisign-sinh  by \\ttTthIi-sinh;
+} sin_abvs_6;
+
+lookup sin_virama_1 {
+  lookupflag 0;
+    sub \\ba-sinh \\virama-sinh  by \\b-sinh;
+    sub \\bha-sinh \\virama-sinh  by \\bh-sinh;
+    sub \\ca-sinh \\virama-sinh  by \\c-sinh;
+    sub \\cha-sinh \\virama-sinh  by \\ch-sinh;
+    sub \\da-sinh \\virama-sinh  by \\d-sinh;
+    sub \\dda-sinh \\virama-sinh  by \\dd-sinh;
+    sub \\ddha-sinh \\virama-sinh  by \\ddh-sinh;
+    sub \\dha-sinh \\virama-sinh  by \\dh-sinh;
+    sub \\fa-sinh \\virama-sinh  by \\f-sinh;
+    sub \\ga-sinh \\virama-sinh  by \\g-sinh;
+    sub \\gha-sinh \\virama-sinh  by \\gh-sinh;
+    sub \\ha-sinh \\virama-sinh  by \\h-sinh;
+    sub \\ja-sinh \\virama-sinh  by \\j-sinh;
+    sub \\jha-sinh \\virama-sinh  by \\jh-sinh;
+    sub \\jnya-sinh \\virama-sinh  by \\jny-sinh;
+    sub \\ka-sinh \\virama-sinh  by \\k-sinh;
+    sub \\kha-sinh \\virama-sinh  by \\kh-sinh;
+    sub \\la-sinh \\virama-sinh  by \\l-sinh;
+    sub \\lla-sinh \\virama-sinh  by \\ll-sinh;
+    sub \\ma-sinh \\virama-sinh  by \\m-sinh;
+    sub \\aasign-sinh \\virama-sinh  by \\aasign_virama-sinh;
+    sub \\mba-sinh \\virama-sinh  by \\mb-sinh;
+    sub \\na-sinh \\virama-sinh  by \\n-sinh;
+    sub \\nda-sinh \\virama-sinh  by \\nd-sinh;
+    sub \\nyja-sinh \\virama-sinh  by \\nyj-sinh;
+    sub \\nga-sinh \\virama-sinh  by \\ng-sinh;
+    sub \\nna-sinh \\virama-sinh  by \\nn-sinh;
+    sub \\nndda-sinh \\virama-sinh  by \\nndd-sinh;
+    sub \\nnga-sinh \\virama-sinh  by \\nng-sinh;
+    sub \\nya-sinh \\virama-sinh  by \\ny-sinh;
+    sub \\pa-sinh \\virama-sinh  by \\p-sinh;
+    sub \\pha-sinh \\virama-sinh  by \\ph-sinh;
+    sub \\ra-sinh \\virama-sinh  by \\r-sinh;
+    sub \\sa-sinh \\virama-sinh  by \\s-sinh;
+    sub \\sha-sinh \\virama-sinh  by \\sh-sinh;
+    sub \\ssa-sinh \\virama-sinh  by \\ss-sinh;
+    sub \\ta-sinh \\virama-sinh  by \\t-sinh;
+    sub \\tha-sinh \\virama-sinh  by \\th-sinh;
+    sub \\tta-sinh \\virama-sinh  by \\tt-sinh;
+    sub \\ttha-sinh \\virama-sinh  by \\tth-sinh;
+    sub \\va-sinh \\virama-sinh  by \\v-sinh;
+    sub \\ya-sinh \\virama-sinh  by \\y-sinh;
+} sin_virama_1;
+
+lookup sin_virama_2 {
+  lookupflag 0;
+    sub \\dDha-sinh \\virama-sinh  by \\dDh-sinh;
+    sub \\dVa-sinh \\virama-sinh  by \\dV-sinh;
+    sub \\gRa-sinh \\virama-sinh  by \\gR-sinh;
+    sub \\kSsa-sinh \\virama-sinh  by \\kSs-sinh;
+    sub \\kVa-sinh \\virama-sinh  by \\kV-sinh;
+    sub \\khRa-sinh \\virama-sinh  by \\khR-sinh;
+    sub \\nDa-sinh \\virama-sinh  by \\nD-sinh;
+    sub \\nDha-sinh \\virama-sinh  by \\nDh-sinh;
+    sub \\nTha-sinh \\virama-sinh  by \\nTh-sinh;
+    sub \\nVa-sinh \\virama-sinh  by \\nV-sinh;
+    sub \\tTha-sinh \\virama-sinh  by \\tTh-sinh;
+    sub \\tVa-sinh \\virama-sinh  by \\tV-sinh;
+    sub \\ttTtha-sinh \\virama-sinh  by \\ttTth-sinh;
+    sub \\yasign-sinh \\virama-sinh  by \\yasign_virama-sinh;
+} sin_virama_2;
+
+lookup sin_virama_3 {
+  lookupflag 0;
+    sub \\bRa-sinh \\virama-sinh  by \\bR-sinh;
+    sub \\bhRa-sinh \\virama-sinh  by \\bhR-sinh;
+    sub \\cRa-sinh \\virama-sinh  by \\cR-sinh;
+    sub \\dRa-sinh \\virama-sinh  by \\dR-sinh;
+    sub \\ddRa-sinh \\virama-sinh  by \\ddR-sinh;
+    sub \\dhRa-sinh \\virama-sinh  by \\dhR-sinh;
+    sub \\fRa-sinh \\virama-sinh  by \\fR-sinh;
+    sub \\ghRa-sinh \\virama-sinh  by \\ghR-sinh;
+    sub \\hRa-sinh \\virama-sinh  by \\hR-sinh;
+    sub \\jRa-sinh \\virama-sinh  by \\jR-sinh;
+    sub \\jhRa-sinh \\virama-sinh  by \\jhR-sinh;
+    sub \\jnyRa-sinh \\virama-sinh  by \\jnyR-sinh;
+    sub \\mRa-sinh \\virama-sinh  by \\mR-sinh;
+    sub \\nyjRa-sinh \\virama-sinh  by \\nyjR-sinh;
+    sub \\nyRa-sinh \\virama-sinh  by \\nyR-sinh;
+    sub \\pRa-sinh \\virama-sinh  by \\pR-sinh;
+    sub \\sRa-sinh \\virama-sinh  by \\sR-sinh;
+    sub \\shRa-sinh \\virama-sinh  by \\shR-sinh;
+    sub \\ssRa-sinh \\virama-sinh  by \\ssR-sinh;
+    sub \\tRa-sinh \\virama-sinh  by \\tR-sinh;
+    sub \\ttRa-sinh \\virama-sinh  by \\ttR-sinh;
+    sub \\vRa-sinh \\virama-sinh  by \\vR-sinh;
+} sin_virama_3;
+
+lookup sin_blws {
+  lookupflag 0;
+    sub \\ba-sinh \\usign-sinh  by \\bU-sinh;
+    sub \\ba-sinh \\uusign-sinh  by \\bUu-sinh;
+    sub \\bha-sinh \\usign-sinh  by \\bhU-sinh;
+    sub \\bha-sinh \\uusign-sinh  by \\bhUu-sinh;
+    sub \\ca-sinh \\usign-sinh  by \\cU-sinh;
+    sub \\ca-sinh \\uusign-sinh  by \\cUu-sinh;
+    sub \\cha-sinh \\usign-sinh  by \\chU-sinh;
+    sub \\cha-sinh \\uusign-sinh  by \\chUu-sinh;
+    sub \\dDha-sinh \\usign-sinh  by \\dDhU-sinh;
+    sub \\dDha-sinh \\uusign-sinh  by \\dDhUu-sinh;
+    sub \\da-sinh \\usign-sinh  by \\dU-sinh;
+    sub \\da-sinh \\uusign-sinh  by \\dUu-sinh;
+    sub \\dVa-sinh \\usign-sinh  by \\dVU-sinh;
+    sub \\dVa-sinh \\uusign-sinh  by \\dVUu-sinh;
+    sub \\dda-sinh \\usign-sinh  by \\ddU-sinh;
+    sub \\dda-sinh \\uusign-sinh  by \\ddUu-sinh;
+    sub \\ddha-sinh \\usign-sinh  by \\ddhU-sinh;
+    sub \\ddha-sinh \\uusign-sinh  by \\ddhUu-sinh;
+    sub \\dha-sinh \\usign-sinh  by \\dhU-sinh;
+    sub \\dha-sinh \\uusign-sinh  by \\dhUu-sinh;
+    sub \\da-sinh \\vocalicrsign-sinh  by \\dvocalicr._c-sinh;
+    sub \\da-sinh \\vocalicrrsign-sinh  by \\dvocalicrr._c-sinh;
+    sub \\fa-sinh \\usign-sinh  by \\fU-sinh;
+    sub \\fa-sinh \\uusign-sinh  by \\fUu-sinh;
+    sub \\ga-sinh \\usign-sinh  by \\gU-sinh;
+    sub \\ga-sinh \\uusign-sinh  by \\gUu-sinh;
+    sub \\gha-sinh \\usign-sinh  by \\ghU-sinh;
+    sub \\gha-sinh \\uusign-sinh  by \\ghUu-sinh;
+    sub \\ha-sinh \\usign-sinh  by \\hU-sinh;
+    sub \\ha-sinh \\uusign-sinh  by \\hUu-sinh;
+    sub \\ja-sinh \\usign-sinh  by \\jU-sinh;
+    sub \\ja-sinh \\uusign-sinh  by \\jUu-sinh;
+    sub \\jha-sinh \\usign-sinh  by \\jhU-sinh;
+    sub \\jha-sinh \\uusign-sinh  by \\jhUu-sinh;
+    sub \\jnya-sinh \\usign-sinh  by \\jnyU-sinh;
+    sub \\jnya-sinh \\uusign-sinh  by \\jnyUu-sinh;
+    sub \\kSsa-sinh \\usign-sinh  by \\kSsU-sinh;
+    sub \\kSsa-sinh \\uusign-sinh  by \\kSsUu-sinh;
+    sub \\ka-sinh \\usign-sinh  by \\kU-sinh;
+    sub \\ka-sinh \\uusign-sinh  by \\kUu-sinh;
+    sub \\kVa-sinh \\usign-sinh  by \\kVU-sinh;
+    sub \\kVa-sinh \\uusign-sinh  by \\kVUu-sinh;
+    sub \\kha-sinh \\usign-sinh  by \\khU-sinh;
+    sub \\kha-sinh \\uusign-sinh  by \\khUu-sinh;
+    sub \\la-sinh \\usign-sinh  by \\lU-sinh;
+    sub \\la-sinh \\uusign-sinh  by \\lUu-sinh;
+    sub \\lla-sinh \\usign-sinh  by \\llU-sinh;
+    sub \\lla-sinh \\uusign-sinh  by \\llUu-sinh;
+    sub \\ma-sinh \\usign-sinh  by \\mU-sinh;
+    sub \\ma-sinh \\uusign-sinh  by \\mUu-sinh;
+    sub \\mba-sinh \\usign-sinh  by \\mbU-sinh;
+    sub \\mba-sinh \\uusign-sinh  by \\mbUu-sinh;
+    sub \\nDa-sinh \\usign-sinh  by \\nDU-sinh;
+    sub \\nDa-sinh \\uusign-sinh  by \\nDUu-sinh;
+    sub \\nDha-sinh \\usign-sinh  by \\nDhU-sinh;
+    sub \\nDha-sinh \\uusign-sinh  by \\nDhUu-sinh;
+    sub \\nTha-sinh \\usign-sinh  by \\nThU-sinh;
+    sub \\nTha-sinh \\uusign-sinh  by \\nThUu-sinh;
+    sub \\na-sinh \\usign-sinh  by \\nU-sinh;
+    sub \\na-sinh \\uusign-sinh  by \\nUu-sinh;
+    sub \\nVa-sinh \\usign-sinh  by \\nVU-sinh;
+    sub \\nVa-sinh \\uusign-sinh  by \\nVUu-sinh;
+    sub \\nda-sinh \\usign-sinh  by \\ndU-sinh;
+    sub \\nda-sinh \\uusign-sinh  by \\ndUu-sinh;
+    sub \\nyja-sinh \\usign-sinh  by \\nyjU-sinh;
+    sub \\nyja-sinh \\uusign-sinh  by \\nyjUu-sinh;
+    sub \\nna-sinh \\usign-sinh  by \\nnU-sinh;
+    sub \\nna-sinh \\uusign-sinh  by \\nnUu-sinh;
+    sub \\nndda-sinh \\usign-sinh  by \\nnddU-sinh;
+    sub \\nndda-sinh \\uusign-sinh  by \\nnddUu-sinh;
+    sub \\nnga-sinh \\usign-sinh  by \\nngU-sinh;
+    sub \\nnga-sinh \\uusign-sinh  by \\nngUu-sinh;
+    sub \\nya-sinh \\usign-sinh  by \\nyU-sinh;
+    sub \\nya-sinh \\uusign-sinh  by \\nyUu-sinh;
+    sub \\pa-sinh \\usign-sinh  by \\pU-sinh;
+    sub \\pa-sinh \\uusign-sinh  by \\pUu-sinh;
+    sub \\pha-sinh \\usign-sinh  by \\phU-sinh;
+    sub \\pha-sinh \\uusign-sinh  by \\phUu-sinh;
+    sub \\ra-sinh \\usign-sinh  by \\rU-sinh;
+    sub \\ra-sinh \\uusign-sinh  by \\rUu-sinh;
+    sub \\sa-sinh \\usign-sinh  by \\sU-sinh;
+    sub \\sa-sinh \\uusign-sinh  by \\sUu-sinh;
+    sub \\sha-sinh \\usign-sinh  by \\shU-sinh;
+    sub \\sha-sinh \\uusign-sinh  by \\shUu-sinh;
+    sub \\ssa-sinh \\usign-sinh  by \\ssU-sinh;
+    sub \\ssa-sinh \\uusign-sinh  by \\ssUu-sinh;
+    sub \\tTha-sinh \\usign-sinh  by \\tThU-sinh;
+    sub \\tTha-sinh \\uusign-sinh  by \\tThUu-sinh;
+    sub \\ta-sinh \\usign-sinh  by \\tU-sinh;
+    sub \\ta-sinh \\uusign-sinh  by \\tUu-sinh;
+    sub \\tVa-sinh \\usign-sinh  by \\tVU-sinh;
+    sub \\tVa-sinh \\uusign-sinh  by \\tVUu-sinh;
+    sub \\tha-sinh \\usign-sinh  by \\thU-sinh;
+    sub \\tha-sinh \\uusign-sinh  by \\thUu-sinh;
+    sub \\ttTtha-sinh \\usign-sinh  by \\ttTthU-sinh;
+    sub \\ttTtha-sinh \\uusign-sinh  by \\ttTthUu-sinh;
+    sub \\tta-sinh \\usign-sinh  by \\ttU-sinh;
+    sub \\tta-sinh \\uusign-sinh  by \\ttUu-sinh;
+    sub \\ttha-sinh \\usign-sinh  by \\tthU-sinh;
+    sub \\ttha-sinh \\uusign-sinh  by \\tthUu-sinh;
+    sub \\va-sinh \\usign-sinh  by \\vU-sinh;
+    sub \\va-sinh \\uusign-sinh  by \\vUu-sinh;
+    sub \\ya-sinh \\usign-sinh  by \\yU-sinh;
+    sub \\yasign-sinh \\usign-sinh  by \\yasign_usign-sinh;
+    sub \\ya-sinh \\uusign-sinh  by \\yUu-sinh;
+    sub \\yasign-sinh \\uusign-sinh  by \\yasign_uusign-sinh;
+} sin_blws;
+
+lookup sin_raer {
+  lookupflag 0;
+    sub \\ra-sinh \\aaesign-sinh  by \\rAae-sinh;
+    sub \\ra-sinh \\aesign-sinh  by \\rAe-sinh;
+} sin_raer;
+
+lookup ss_01 {
+  lookupflag 0;
+    sub \\da-sinh \\aasign-sinh  by \\daa._c-sinh;
+    sub \\da-sinh \\aasign_virama-sinh  by \\daa_virama._c-sinh;
+    sub \\da-sinh \\aaesign-sinh  by \\daae._c-sinh;
+    sub \\da-sinh \\aesign-sinh  by \\dae._c-sinh;
+    sub \\da-sinh \\yasign-sinh \\aasign-sinh  by \\dyaa._c-sinh;
+    sub \\da-sinh \\yasign-sinh \\aasign_virama-sinh  by \\dyaa_virama._c-sinh;
+    sub \\da-sinh \\yasign_uusign-sinh  by \\dyUu._c-sinh;
+    sub \\da-sinh \\yasign-sinh  by \\dya._c-sinh;
+    sub \\da-sinh \\yasign_usign-sinh  by \\dyU._c-sinh;
+    sub \\jnya-sinh \\aasign-sinh  by \\jnyaa._c-sinh;
+    sub \\jnya-sinh \\aasign_virama-sinh  by \\jnyaa_virama._c-sinh;
+    sub \\jnya-sinh \\aesign-sinh  by \\jnyae._c-sinh;
+    sub \\jnya-sinh \\aaesign-sinh  by \\jnyaae._c-sinh;
+    sub \\nDa-sinh \\aasign-sinh  by \\nDaa._c-sinh;
+    sub \\nDa-sinh \\aasign_virama-sinh  by \\nDaa_virama._c-sinh;
+    sub \\nDa-sinh \\aesign-sinh  by \\nDae._c-sinh;
+    sub \\nDa-sinh \\aaesign-sinh  by \\nDaae._c-sinh;
+    sub \\nda-sinh \\aasign-sinh  by \\ndaa._c-sinh;
+    sub \\nda-sinh \\aasign_virama-sinh  by \\ndaa_virama._c-sinh;
+    sub \\nda-sinh \\aaesign-sinh  by \\ndaae._c-sinh;
+    sub \\nda-sinh \\aesign-sinh  by \\ndae._c-sinh;
+    sub \\nya-sinh \\aasign-sinh  by \\nyaa._c-sinh;
+    sub \\nya-sinh \\aasign_virama-sinh  by \\nyaa_virama._c-sinh;
+    sub \\nya-sinh \\aesign-sinh  by \\nyae._c-sinh;
+    sub \\nya-sinh \\aaesign-sinh  by \\nyaae._c-sinh;
+} ss_01;
+
+lookup sin_yansaya_ss02 {
+  lookupflag 0;
+    sub \\virama-sinh \\zerowidthjoiner \\ya-sinh  by \\yasign-sinh;
+} sin_yansaya_ss02;
+
+lookup sin_rakar_ss02 {
+  lookupflag 0;
+    sub \\ba-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\bRa-sinh;
+    sub \\bha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\bhRa-sinh;
+    sub \\ca-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\cRa-sinh;
+    sub \\da-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\dRa-sinh;
+    sub \\dda-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\ddRa-sinh;
+    sub \\dha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\dhRa-sinh;
+    sub \\fa-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\fRa-sinh;
+    sub \\ga-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\gRa-sinh;
+    sub \\gha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\ghRa-sinh;
+    sub \\ha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\hRa-sinh;
+    sub \\ja-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\jRa-sinh;
+    sub \\jha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\jhRa-sinh;
+    sub \\jnya-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\jnyRa-sinh;
+    sub \\ka-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\kRa-sinh;
+    sub \\kha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\khRa-sinh;
+    sub \\ma-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\mRa-sinh;
+    sub \\nDa-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\nDRa-sinh;
+    sub \\nyja-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\nyjRa-sinh;
+    sub \\nya-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\nyRa-sinh;
+    sub \\pa-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\pRa-sinh;
+    sub \\sa-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\sRa-sinh;
+    sub \\sha-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\shRa-sinh;
+    sub \\ssa-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\ssRa-sinh;
+    sub \\ta-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\tRa-sinh;
+    sub \\tta-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\ttRa-sinh;
+    sub \\va-sinh \\virama-sinh \\zerowidthjoiner \\ra-sinh  by \\vRa-sinh;
+} sin_rakar_ss02;
+
+
+
+
+# GPOS 
+lookup kernHorizontalKerninglookup0 {
+  lookupflag 0;
+    pos \\bIi-sinh \\ba-sinh 10;
+} kernHorizontalKerninglookup0;
+
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\\.null \\CR \\approxequal \\asterisk \\bullet \\bulletoperator \\colon 
+	\\comma \\divide \\eight \\endash \\equal \\exclam \\five \\four \\greater \\hyphen \\less 
+	\\multiply \\nine \\numbersign \\one \\parenleft \\parenright \\percent \\period \\plus 
+	\\question \\questiondown \\quotedbl \\quotedblbase \\quotedblleft \\quotedblright 
+	\\quoteleft \\quoteright \\quotesinglbase \\quotesingle \\registered \\semicolon 
+	\\seven \\a-sinh \\aa-sinh \\aae-sinh \\ae-sinh \\ai-sinh \\anusvaraya-sinh \\au-sinh \\ba-sinh \\bha-sinh 
+	\\ca-sinh \\cha-sinh \\da-sinh \\dda-sinh \\sinDda.virama \\ddha-sinh \\dha-sinh \\sinDrI \\sinDrIi 
+	\\sinDra \\e-sinh \\ee-sinh \\fRI-sinh \\fRIi-sinh \\fa-sinh \\ga-sinh \\gha-sinh \\ha-sinh \\i-sinh \\ii-sinh 
+	\\ja-sinh \\jha-sinh \\jnya-sinh \\ka-sinh \\kha-sinh \\la-sinh \\lla-sinh \\ma-sinh \\aasign-sinh 
+	\\aaesign-sinh \\aesign-sinh \\aisign-sinh \\ausign-sinh \\esign-sinh \\eesign-sinh 
+	\\isign-sinh \\isign-sinh.alt \\isign-sinh.alt1 \\isign-sinh.alt2 \\isign-sinh.alt3 
+	\\iisign-sinh \\iisign-sinh.alt \\iisign-sinh.alt1 \\iisign-sinh.alt2 
+	\\iisign-sinh.alt3 \\vocalicllsign-sinh \\vocaliclsign-sinh \\osign-sinh \\oosign-sinh \\vocalicrsign-sinh 
+	\\vocalicrrsign-sinh \\usign-sinh \\usign-sinh.alt \\usign-sinh.alt1 \\usign-sinh.alt2 
+	\\usign-sinh.alt3 \\uusign-sinh \\uusign-sinh.alt \\uusign-sinh.alt1 
+	\\uusign-sinh.alt2 \\uusign-sinh.alt3 \\mba-sinh \\nDRI-sinh \\nDRIi-sinh \\na-sinh \\ndRa-sinh 
+	\\nda-sinh \\sinNdda \\nyja-sinh \\nga-sinh \\nna-sinh \\nndda-sinh \\nnga-sinh \\nya-sinh \\o-sinh \\oo-sinh 
+	\\pa-sinh \\pha-sinh \\ra-sinh \\rasign-sinh \\rasign-sinh.long \\rasign-sinh.medium 
+	\\rasign-sinh.short \\sa-sinh \\sha-sinh \\ssRI-sinh \\ssRIi-sinh \\ssa-sinh \\ta-sinh \\tha-sinh \\tta-sinh 
+	\\ttha-sinh \\u-sinh \\uu-sinh \\va-sinh \\virama-sinh \\visargaya-sinh \\vocalicr-sinh \\vocalicl-sinh 
+	\\vocalicll-sinh \\ya-sinh \\vocalicrr-sinh \\six \\slash \\softhyphen \\space \\sun 
+	\\sunwithface \\three \\trademark \\two \\zero \\zerowidthjoiner \\zerowidthnonjoiner ];
+@GDEF_Ligature = [\\b-sinh \\bI-sinh \\bIi-sinh \\bR-sinh \\bRI-sinh \\bRIi-sinh 
+	\\bRa-sinh \\bU-sinh \\bUu-sinh \\bh-sinh \\bhI-sinh \\bhIi-sinh \\bhRI-sinh \\bhRIi-sinh 
+	\\bhRa-sinh \\bhR-sinh \\bhU-sinh \\bhUu-sinh \\c-sinh \\cI-sinh \\cIi-sinh 
+	\\cR-sinh \\cRI-sinh \\cRIi-sinh \\cRa-sinh \\cU-sinh \\cUu-sinh \\ch-sinh \\chI-sinh 
+	\\chIi-sinh \\chU-sinh \\chUu-sinh \\d-sinh \\daa._c-sinh \\daa_virama._c-sinh 
+	\\daae._c-sinh \\dae._c-sinh \\dDh-sinh \\dDhI-sinh \\dDhIi-sinh \\dDhU-sinh 
+	\\dDhUu-sinh \\dDha-sinh \\dI-sinh \\dIi-sinh \\dR-sinh \\dRI-sinh \\dRIi-sinh \\dRa-sinh \\dU-sinh 
+	\\dUu-sinh \\dV-sinh \\dVI-sinh \\dVIi-sinh \\dVU-sinh \\dVUu-sinh \\dVa-sinh 
+	\\dyaa._c-sinh \\dyaa_virama._c-sinh \\dyUu._c-sinh \\dya._c-sinh 
+	\\dyU._c-sinh \\dd-sinh \\ddI-sinh \\ddIi-sinh \\ddR-sinh \\ddRI-sinh 
+	\\ddRIi-sinh \\ddRa-sinh \\ddU-sinh \\ddUu-sinh \\ddh-sinh \\ddhI-sinh \\ddhIi-sinh \\ddhU-sinh 
+	\\ddhUu-sinh \\dh-sinh \\dhI-sinh \\dhIi-sinh \\dhR-sinh \\dhRI-sinh \\dhRIi-sinh 
+	\\dhRa-sinh \\dhU-sinh \\dhUu-sinh \\dvocalicr._c-sinh \\dvocalicrr._c-sinh \\f-sinh \\fI-sinh \\fIi-sinh 
+	\\fR-sinh \\fRa-sinh \\fU-sinh \\fUu-sinh \\g-sinh \\gDha-sinh \\gI-sinh \\gIi-sinh 
+	\\gR-sinh \\gRI-sinh \\gRIi-sinh \\gRa-sinh \\gU-sinh \\gUu-sinh \\gh-sinh \\ghI-sinh 
+	\\ghIi-sinh \\ghR-sinh \\ghRI-sinh \\ghRIi-sinh \\ghRa-sinh \\ghU-sinh \\ghUu-sinh 
+	\\h-sinh \\hI-sinh \\hIi-sinh \\hR-sinh \\hRI-sinh \\hRIi-sinh \\hRa-sinh \\hU-sinh 
+	\\hUu-sinh \\j-sinh \\jI-sinh \\jIi-sinh \\jR-sinh \\jRI-sinh \\jRIi-sinh \\jRa-sinh 
+	\\jU-sinh \\jUu-sinh \\jh-sinh \\jhI-sinh \\jhIi-sinh \\jhR-sinh \\jhRI-sinh \\jhRIi-sinh 
+	\\jhRa-sinh \\jhU-sinh \\jhUu-sinh \\jny-sinh \\jnyaa._c-sinh \\jnyaa_virama._c-sinh 
+	\\jnyae._c-sinh \\jnyaae._c-sinh \\jnyI-sinh \\jnyIi-sinh \\jnyR-sinh \\jnyRI-sinh 
+	\\jnyRIi-sinh \\jnyRa-sinh \\jnyU-sinh \\jnyUu-sinh \\k-sinh \\kI-sinh \\kIi-sinh \\kRI-sinh 
+	\\kRIi-sinh \\kRa-sinh \\kSs-sinh \\kSsI-sinh \\kSsIi-sinh \\kSsU-sinh \\kSsUu-sinh \\kSsa-sinh 
+	\\kU-sinh \\kUu-sinh \\kV-sinh \\kVI-sinh \\kVIi-sinh \\kVU-sinh \\kVUu-sinh \\kVa-sinh 
+	\\kh-sinh \\khI-sinh \\khIi-sinh \\khR-sinh \\khRI-sinh \\khRIi-sinh \\khRa-sinh 
+	\\khU-sinh \\khUu-sinh \\l-sinh \\lI-sinh \\lIi-sinh \\lU-sinh \\lUu-sinh \\ll-sinh 
+	\\llI-sinh \\llIi-sinh \\llU-sinh \\llUu-sinh \\m-sinh \\mI-sinh \\mIi-sinh \\mR-sinh 
+	\\mRI-sinh \\mRIi-sinh \\mRa-sinh \\mU-sinh \\mUu-sinh \\aasign_virama-sinh \\mb-sinh 
+	\\mbI-sinh \\mbIi-sinh \\mbU-sinh \\mbUu-sinh \\n-sinh \\nD-sinh \\nDaa._c-sinh 
+	\\nDaa_virama._c-sinh \\nDae._c-sinh \\nDaae._c-sinh \\nDI-sinh \\nDIi-sinh \\nDRa-sinh 
+	\\nDU-sinh \\nDUu-sinh \\nDa-sinh \\nDh-sinh \\nDhI-sinh \\nDhIi-sinh \\nDhU-sinh \\nDhUu-sinh 
+	\\nDha-sinh \\nI-sinh \\nIi-sinh \\nTh-sinh \\nThI-sinh \\nThIi-sinh \\nThU-sinh \\nThUu-sinh 
+	\\nTha-sinh \\nU-sinh \\nUu-sinh \\nV-sinh \\nVI-sinh \\nVIi-sinh \\nVU-sinh \\nVUu-sinh \\nVa-sinh 
+	\\nd-sinh \\ndaa._c-sinh \\ndaa_virama._c-sinh \\ndaae._c-sinh 
+	\\ndae._c-sinh \\ndI-sinh \\ndIi-sinh \\ndU-sinh \\ndUu-sinh \\nyj-sinh \\nyjI-sinh 
+	\\nyjIi-sinh \\nyjR-sinh \\nyjRa-sinh \\nyjU-sinh \\nyjUu-sinh \\ng-sinh \\ngI-sinh 
+	\\ngIi-sinh \\nn-sinh \\nnI-sinh \\nnIi-sinh \\nnU-sinh \\nnUu-sinh \\nndd-sinh 
+	\\nnddI-sinh \\nnddIi-sinh \\nnddU-sinh \\nnddUu-sinh \\nng-sinh \\nngI-sinh \\nngIi-sinh 
+	\\nngU-sinh \\nngUu-sinh \\ny-sinh \\nyaa._c-sinh \\nyaa_virama._c-sinh 
+	\\nyae._c-sinh \\nyaae._c-sinh \\nyI-sinh \\nyIi-sinh \\nyR-sinh \\nyRI-sinh 
+	\\nyRIi-sinh \\nyRa-sinh \\nyU-sinh \\nyUu-sinh \\p-sinh \\pI-sinh \\pIi-sinh \\pR-sinh 
+	\\pRI-sinh \\pRIi-sinh \\pRa-sinh \\pU-sinh \\pUu-sinh \\ph-sinh \\phI-sinh \\phIi-sinh \\phU-sinh 
+	\\phUu-sinh \\r-sinh \\rAae-sinh \\rAe-sinh \\rI-sinh \\rIi-sinh \\rU-sinh \\rUu-sinh \\repha-sinh 
+	\\s-sinh \\sI-sinh \\sIi-sinh \\sR-sinh \\sRI-sinh \\sRIi-sinh \\sRa-sinh \\sU-sinh 
+	\\sUu-sinh \\sh-sinh \\shI-sinh \\shIi-sinh \\shR-sinh \\shRI-sinh \\shRIi-sinh 
+	\\shRa-sinh \\shU-sinh \\shUu-sinh \\ss-sinh \\ssI-sinh \\ssIi-sinh \\ssR-sinh 
+	\\ssRa-sinh \\ssU-sinh \\ssUu-sinh \\t-sinh \\tI-sinh \\tIi-sinh \\tR-sinh \\tRI-sinh 
+	\\tRIi-sinh \\tRa-sinh \\tTh-sinh \\tThI-sinh \\tThIi-sinh \\tThU-sinh \\tThUu-sinh \\tTha-sinh 
+	\\tU-sinh \\tUu-sinh \\tV-sinh \\tVI-sinh \\tVIi-sinh \\tVU-sinh \\tVUu-sinh \\tVa-sinh 
+	\\th-sinh \\thI-sinh \\thIi-sinh \\thU-sinh \\thUu-sinh \\tt-sinh \\ttI-sinh \\ttIi-sinh 
+	\\ttR-sinh \\ttRI-sinh \\ttRIi-sinh \\ttRa-sinh \\ttTth-sinh \\ttTthI-sinh 
+	\\ttTthIi-sinh \\ttTthU-sinh \\ttTthUu-sinh \\ttTtha-sinh \\ttU-sinh \\ttUu-sinh \\tth-sinh 
+	\\tthI-sinh \\tthIi-sinh \\tthU-sinh \\tthUu-sinh \\v-sinh \\vI-sinh \\vIi-sinh \\vR-sinh 
+	\\vRI-sinh \\vRIi-sinh \\vRa-sinh \\vU-sinh \\vUu-sinh \\yasign_virama-sinh \\y-sinh \\yI-sinh 
+	\\yasign_isign-sinh \\yIi-sinh \\yasign_iisign-sinh \\yU-sinh \\yasign_usign-sinh \\yUu-sinh \\yasign_uusign-sinh 
+	\\yasign-sinh ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, , ;
+
+} GDEF;";
+name = Prefix;
+}
+);
+features = (
+{
+code = " script sinh;
+     language dflt ;
+      lookup sin_akhands;";
+tag = akhn;
+},
+{
+code = " script sinh;
+     language dflt ;
+      lookup sin_reph;";
+tag = rphf;
+},
+{
+code = " script sinh;
+     language dflt ;
+      lookup sin_yansaya;
+      lookup sin_rakar;";
+tag = vatu;
+},
+{
+code = " script sinh;
+     language dflt ;
+      lookup sin_split_matra;";
+tag = pstf;
+},
+{
+code = " script sinh;
+     language dflt ;
+      lookup sin_abvs_1;
+      lookup sin_abvs_2;
+      lookup sin_abvs_3;
+      lookup sin_abvs_4;
+      lookup sin_abvs_5;
+      lookup sin_abvs_6;
+      lookup sin_virama_1;
+      lookup sin_virama_2;
+      lookup sin_virama_3;";
+tag = abvs;
+},
+{
+code = " script sinh;
+     language dflt ;
+      lookup sin_blws;";
+tag = blws;
+},
+{
+code = " script sinh;
+     language dflt ;
+      lookup sin_raer;";
+tag = psts;
+},
+{
+code = " script sinh;
+     language dflt ;
+      lookup ss_01;";
+tag = ss01;
+},
+{
+code = " script sinh;
+     language dflt ;
+      lookup sin_yansaya_ss02;
+      lookup sin_rakar_ss02;";
+tag = ss02;
+},
+{
+code = " script DFLT;
+     language dflt ;
+      lookup kernHorizontalKerninglookup0;";
+disabled = 1;
+tag = kern;
+}
+);
+fontMaster = (
+{
+customParameters = (
+{
+name = "UFO Filename";
+value = AF_Sigiri_UNI.ufo;
+}
+);
+id = m001;
+metricValues = (
+{
+},
+{
+},
+{
+}
+);
+name = Regular;
+}
+);
+instances = (
+{
+instanceInterpolations = {
+m001 = 1;
+};
+name = Regular;
+}
+);
+kerningLTR = {
+m001 = {
+"bIi-sinh" = {
+"ba-sinh" = 10;
+};
+};
+};
+metrics = (
+{
+type = "cap height";
+},
+{
+type = "x-height";
+},
+{
+type = baseline;
+}
+);
+properties = (
+{
+key = copyrights;
+values = (
+{
+language = dflt;
+value = "Copyright 2026 The Sigiri Project Authors (https://github.com/mooniak/sigiri-font)";
+}
+);
+},
+{
+key = designers;
+values = (
+{
+language = dflt;
+value = "Lalith Rathnayake";
+}
+);
+},
+{
+key = manufacturers;
+values = (
+{
+language = dflt;
+value = mooniak;
+}
+);
+},
+{
+key = licenses;
+values = (
+{
+language = dflt;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org";
+}
+);
+},
+{
+key = designerURL;
+value = "http://www.mooniak.com/";
+},
+{
+key = manufacturerURL;
+value = "https://mooniak.com/";
+},
+{
+key = licenseURL;
+value = "https://openfontlicense.org";
+}
+);
+settings = {
+disablesNiceNames = 1;
+};
+unitsPerEm = 1000;
+userData = {
+UFOFormat = 3;
+};
+versionMajor = 1;
+versionMinor = 0;
+}

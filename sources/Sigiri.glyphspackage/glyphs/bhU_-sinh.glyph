@@ -1,0 +1,80 @@
+{
+glyphname = "bhU-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+ref = "bha-sinh";
+},
+{
+alignment = -1;
+pos = (821,0);
+ref = "usign-sinh.alt1";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -153;
+width = 109;
+},
+{
+position = 0;
+width = 91;
+},
+{
+position = 1;
+width = 71;
+},
+{
+position = 1;
+width = 90;
+},
+{
+position = 209;
+width = 73;
+},
+{
+position = 278;
+width = 84;
+},
+{
+position = 391;
+width = 108;
+},
+{
+position = 402;
+width = 100;
+}
+);
+vhints = (
+{
+position = 58;
+width = 150;
+},
+{
+position = 352;
+width = 119;
+},
+{
+position = 538;
+width = 19;
+},
+{
+position = 571;
+width = 42;
+},
+{
+position = 641;
+width = 160;
+}
+);
+};
+};
+width = 823;
+}
+);
+}

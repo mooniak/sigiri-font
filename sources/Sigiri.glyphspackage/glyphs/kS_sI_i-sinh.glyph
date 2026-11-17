@@ -1,0 +1,88 @@
+{
+glyphname = "kSsIi-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+ref = "kSsa-sinh";
+},
+{
+alignment = -1;
+pos = (1190,3);
+ref = "iisign-sinh.alt";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 0;
+width = 111;
+},
+{
+position = 1;
+width = 104;
+},
+{
+position = 261;
+width = 79;
+},
+{
+position = 378;
+width = 123;
+},
+{
+position = 383;
+width = 106;
+},
+{
+position = 394;
+width = 110;
+},
+{
+position = 502;
+width = 50;
+},
+{
+position = 593;
+width = 107;
+}
+);
+vhints = (
+{
+position = 250;
+width = 53;
+},
+{
+position = 348;
+width = 154;
+},
+{
+position = 529;
+width = 160;
+},
+{
+position = 572;
+width = 140;
+},
+{
+position = 914;
+width = 57;
+},
+{
+position = 1027;
+width = 161;
+},
+{
+position = 1040;
+width = 93;
+}
+);
+};
+};
+width = 1208;
+}
+);
+}

@@ -1,0 +1,52 @@
+{
+category = Mark;
+glyphname = "vocalicrrsign-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (324,1);
+ref = "vocalicrsign-sinh";
+},
+{
+alignment = -1;
+pos = (0,1);
+ref = "vocalicrsign-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 426;
+width = 77;
+}
+);
+vhints = (
+{
+position = 82;
+width = 172;
+},
+{
+position = 254;
+width = 127;
+},
+{
+position = 406;
+width = 172;
+},
+{
+position = 578;
+width = 127;
+}
+);
+};
+};
+width = 664;
+}
+);
+subCategory = Spacing;
+unicode = 3570;
+}

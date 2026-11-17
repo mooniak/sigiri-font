@@ -1,0 +1,88 @@
+{
+glyphname = "gRa-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (719,1);
+ref = "rasign-sinh.long";
+},
+{
+alignment = -1;
+ref = "ga-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -177;
+width = 104;
+},
+{
+position = -1;
+width = 99;
+},
+{
+position = 1;
+width = 71;
+},
+{
+position = 1;
+width = 97;
+},
+{
+position = 209;
+width = 73;
+},
+{
+position = 402;
+width = 100;
+},
+{
+position = 432;
+width = 69;
+}
+);
+vhints = (
+{
+position = 17;
+width = 160;
+},
+{
+position = 20;
+width = 160;
+},
+{
+position = 261;
+width = 119;
+},
+{
+position = 264;
+width = 119;
+},
+{
+position = 447;
+width = 19;
+},
+{
+position = 450;
+width = 19;
+},
+{
+position = 550;
+width = 160;
+},
+{
+position = 553;
+width = 160;
+}
+);
+};
+};
+width = 733;
+}
+);
+}

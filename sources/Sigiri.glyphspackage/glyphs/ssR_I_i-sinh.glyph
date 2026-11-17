@@ -1,0 +1,100 @@
+{
+glyphname = "ssRIi-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+ref = "ssRa-sinh";
+},
+{
+alignment = -1;
+pos = (675,-1);
+ref = "iisign-sinh.alt";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -159;
+width = 72;
+},
+{
+position = -51;
+width = 21;
+},
+{
+position = -51;
+width = 51;
+},
+{
+position = 0;
+width = 21;
+},
+{
+position = 1;
+width = 104;
+},
+{
+position = 261;
+width = 79;
+},
+{
+position = 383;
+width = 106;
+},
+{
+position = 498;
+width = 50;
+},
+{
+position = 589;
+width = 107;
+}
+);
+vhints = (
+{
+position = 19;
+width = 160;
+},
+{
+position = 57;
+width = 140;
+},
+{
+position = 225;
+width = 56;
+},
+{
+position = 227;
+width = 56;
+},
+{
+position = 399;
+width = 57;
+},
+{
+position = 517;
+width = 161;
+},
+{
+position = 525;
+width = 93;
+},
+{
+position = 557;
+width = 61;
+},
+{
+position = 559;
+width = 61;
+}
+);
+};
+};
+width = 699;
+}
+);
+}

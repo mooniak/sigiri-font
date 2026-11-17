@@ -1,0 +1,81 @@
+{
+glyphname = "shIi-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (732,-1);
+ref = "iisign-sinh.alt2";
+},
+{
+alignment = -1;
+pos = (1,0);
+ref = "sha-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -1;
+width = 99;
+},
+{
+position = 92;
+width = 61;
+},
+{
+position = 402;
+width = 100;
+},
+{
+position = 498;
+width = 50;
+},
+{
+position = 594;
+width = 102;
+}
+);
+vhints = (
+{
+position = 22;
+width = 160;
+},
+{
+position = 57;
+width = 140;
+},
+{
+position = 248;
+width = 119;
+},
+{
+position = 321;
+width = 121;
+},
+{
+position = 451;
+width = 66;
+},
+{
+position = 456;
+width = 57;
+},
+{
+position = 555;
+width = 160;
+},
+{
+position = 582;
+width = 93;
+}
+);
+};
+};
+width = 735;
+}
+);
+}

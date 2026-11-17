@@ -1,0 +1,61 @@
+{
+glyphname = "yasign_virama-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (-3,0);
+ref = "yasign-sinh";
+},
+{
+alignment = -1;
+pos = (546,-3);
+ref = "virama-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 1;
+width = 96;
+},
+{
+position = 35;
+width = 83;
+},
+{
+position = 260;
+width = 82;
+},
+{
+position = 386;
+width = 267;
+},
+{
+position = 395;
+width = 103;
+},
+{
+position = 424;
+width = 78;
+}
+);
+vhints = (
+{
+position = 378;
+width = 136;
+},
+{
+position = 387;
+width = 136;
+}
+);
+};
+};
+width = 543;
+}
+);
+}

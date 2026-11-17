@@ -1,0 +1,54 @@
+{
+glyphname = "ddUu-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+pos = (638,0);
+ref = "uusign-sinh";
+},
+{
+ref = "dda-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 1;
+width = 96;
+},
+{
+position = 347;
+width = 109;
+},
+{
+position = 512;
+width = 105;
+}
+);
+vhints = (
+{
+position = 40;
+width = 154;
+},
+{
+position = 289;
+width = 69;
+},
+{
+position = 456;
+width = 166;
+},
+{
+position = 457;
+width = 143;
+}
+);
+};
+};
+width = 642;
+}
+);
+}

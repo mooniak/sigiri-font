@@ -1,0 +1,68 @@
+{
+glyphname = "kRa-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (729,0);
+ref = "rasign-sinh";
+},
+{
+alignment = -1;
+ref = "ka-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -178;
+width = 105;
+},
+{
+position = 0;
+width = 111;
+},
+{
+position = 1;
+width = 71;
+},
+{
+position = 305;
+width = 13;
+},
+{
+position = 378;
+width = 123;
+},
+{
+position = 394;
+width = 110;
+}
+);
+vhints = (
+{
+position = 20;
+width = 186;
+},
+{
+position = 250;
+width = 53;
+},
+{
+position = 348;
+width = 154;
+},
+{
+position = 585;
+width = 160;
+}
+);
+};
+};
+width = 765;
+}
+);
+}

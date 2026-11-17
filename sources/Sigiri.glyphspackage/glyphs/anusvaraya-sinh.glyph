@@ -1,0 +1,76 @@
+{
+category = Mark;
+glyphname = "anusvaraya-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+closed = 1;
+nodes = (
+(174,151,ls),
+(174,104,o),
+(201,81,o),
+(245,81,cs),
+(302,81,o),
+(317,123,o),
+(317,151,cs),
+(317,279,ls),
+(317,315,o),
+(312.943,357.031,o),
+(243.417,357.031,cs),
+(227.938,357.031,o),
+(174,353.711,o),
+(174,279,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(471,149,ls),
+(471,73,o),
+(393,0,o),
+(242,0,cs),
+(94,0,o),
+(20,67,o),
+(20,150,cs),
+(20,296,ls),
+(20,380,o),
+(94,439,o),
+(242,439,cs),
+(418,439,o),
+(471,370,o),
+(471,305,cs)
+);
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 0;
+width = 81;
+},
+{
+position = 357;
+width = 82;
+}
+);
+vhints = (
+{
+position = 20;
+width = 154;
+},
+{
+position = 317;
+width = 154;
+}
+);
+};
+};
+width = 491;
+}
+);
+subCategory = Spacing;
+unicode = 3458;
+}

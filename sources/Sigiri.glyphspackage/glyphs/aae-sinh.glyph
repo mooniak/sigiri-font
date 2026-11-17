@@ -1,0 +1,69 @@
+{
+glyphname = "aae-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (526,0);
+ref = "aaesign-sinh";
+},
+{
+alignment = -1;
+ref = "a-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 0;
+width = 83;
+},
+{
+position = 1;
+width = 99;
+},
+{
+position = 266;
+width = 85;
+},
+{
+position = 289;
+width = 76;
+},
+{
+position = 400;
+width = 101;
+},
+{
+position = 402;
+width = 77;
+}
+);
+vhints = (
+{
+position = 21;
+width = 161;
+},
+{
+position = 325;
+width = 147;
+},
+{
+position = 544;
+width = 282;
+},
+{
+position = 544;
+width = 140;
+}
+);
+};
+};
+width = 848;
+}
+);
+unicode = 3464;
+}

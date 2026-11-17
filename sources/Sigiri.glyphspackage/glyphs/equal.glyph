@@ -1,0 +1,50 @@
+{
+glyphname = equal;
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+closed = 1;
+nodes = (
+(20,312,l),
+(275,312,l),
+(275,225,l),
+(20,225,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(20,80,l),
+(20,167,l),
+(275,167,l),
+(275,80,l)
+);
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 80;
+width = 87;
+},
+{
+position = 225;
+width = 87;
+}
+);
+vhints = (
+{
+position = 20;
+width = 255;
+}
+);
+};
+};
+width = 295;
+}
+);
+unicode = 61;
+}

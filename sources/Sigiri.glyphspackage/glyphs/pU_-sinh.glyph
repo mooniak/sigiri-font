@@ -1,0 +1,57 @@
+{
+glyphname = "pU-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (675,1);
+ref = "usign-sinh.alt";
+},
+{
+alignment = -1;
+pos = (-1,-1);
+ref = "pa-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -173;
+width = 110;
+},
+{
+position = 0;
+width = 103;
+},
+{
+position = 259;
+width = 83;
+},
+{
+position = 395;
+width = 104;
+}
+);
+vhints = (
+{
+position = 19;
+width = 162;
+},
+{
+position = 501;
+width = 143;
+},
+{
+position = 514;
+width = 162;
+}
+);
+};
+};
+width = 700;
+}
+);
+}

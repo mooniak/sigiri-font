@@ -1,0 +1,64 @@
+{
+glyphname = "jI-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (-116,-1);
+ref = "isign-sinh.alt3";
+},
+{
+alignment = -1;
+ref = "ja-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 1;
+width = 103;
+},
+{
+position = 260;
+width = 83;
+},
+{
+position = 396;
+width = 104;
+},
+{
+position = 552;
+width = 83;
+}
+);
+vhints = (
+{
+position = -265;
+width = 59;
+},
+{
+position = -28;
+width = 57;
+},
+{
+position = 19;
+width = 162;
+},
+{
+position = 514;
+width = 162;
+},
+{
+position = 541;
+width = 121;
+}
+);
+};
+};
+width = 699;
+}
+);
+}

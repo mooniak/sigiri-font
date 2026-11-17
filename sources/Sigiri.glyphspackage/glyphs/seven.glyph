@@ -1,0 +1,43 @@
+{
+glyphname = seven;
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+closed = 1;
+nodes = (
+(486,618,l),
+(325,-1,l),
+(137,-1,l),
+(261,518,l),
+(20,518,l),
+(20,618,l)
+);
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -1;
+width = 21;
+},
+{
+position = 518;
+width = 100;
+}
+);
+vhints = (
+{
+position = 20;
+width = 466;
+}
+);
+};
+};
+width = 516;
+}
+);
+unicode = 55;
+}

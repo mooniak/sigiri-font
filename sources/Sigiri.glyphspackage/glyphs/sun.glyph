@@ -1,0 +1,10 @@
+{
+glyphname = sun;
+layers = (
+{
+layerId = m001;
+width = 462;
+}
+);
+unicode = 9788;
+}

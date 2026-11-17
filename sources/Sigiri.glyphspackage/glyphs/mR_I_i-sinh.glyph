@@ -1,0 +1,88 @@
+{
+glyphname = "mRIi-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (620,0);
+ref = "rasign-sinh";
+},
+{
+alignment = -1;
+ref = "mIi-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -178;
+width = 105;
+},
+{
+position = 0;
+width = 108;
+},
+{
+position = 204;
+width = 63;
+},
+{
+position = 332;
+width = 103;
+},
+{
+position = 475;
+width = 101;
+},
+{
+position = 553;
+width = 49;
+},
+{
+position = 646;
+width = 105;
+}
+);
+vhints = (
+{
+position = 14;
+width = 134;
+},
+{
+position = 15;
+width = 162;
+},
+{
+position = 20;
+width = 134;
+},
+{
+position = 306;
+width = 76;
+},
+{
+position = 312;
+width = 76;
+},
+{
+position = 434;
+width = 166;
+},
+{
+position = 440;
+width = 166;
+},
+{
+position = 491;
+width = 93;
+}
+);
+};
+};
+width = 626;
+}
+);
+}

@@ -1,0 +1,73 @@
+{
+glyphname = "shR-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (1,0);
+ref = "shRa-sinh";
+},
+{
+alignment = -1;
+pos = (717,-3);
+ref = "virama-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -178;
+width = 104;
+},
+{
+position = -1;
+width = 99;
+},
+{
+position = 92;
+width = 61;
+},
+{
+position = 386;
+width = 267;
+},
+{
+position = 402;
+width = 100;
+}
+);
+vhints = (
+{
+position = 22;
+width = 160;
+},
+{
+position = 248;
+width = 119;
+},
+{
+position = 321;
+width = 121;
+},
+{
+position = 451;
+width = 66;
+},
+{
+position = 549;
+width = 136;
+},
+{
+position = 555;
+width = 160;
+}
+);
+};
+};
+width = 735;
+}
+);
+}

@@ -1,0 +1,105 @@
+{
+glyphname = "nyI-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+ref = "nya-sinh";
+},
+{
+alignment = -1;
+pos = (519,-3);
+ref = "isign-sinh.alt3";
+scale = (1,1.0034);
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = -175;
+width = 79;
+},
+{
+position = 0;
+width = 111;
+},
+{
+position = 1;
+width = 99;
+},
+{
+position = 78;
+width = 379;
+},
+{
+position = 267;
+width = 84;
+},
+{
+position = 378;
+width = 123;
+},
+{
+position = 394;
+width = 110;
+},
+{
+position = 400;
+width = 101;
+},
+{
+position = 551;
+width = 83;
+}
+);
+vhints = (
+{
+position = 21;
+width = 144;
+},
+{
+position = 219;
+width = 32;
+},
+{
+position = 237;
+width = 14;
+},
+{
+position = 370;
+width = 59;
+},
+{
+position = 428;
+width = 53;
+},
+{
+position = 526;
+width = 154;
+},
+{
+position = 607;
+width = 57;
+},
+{
+position = 710;
+width = 161;
+},
+{
+position = 842;
+width = 155;
+},
+{
+position = 1028;
+width = 127;
+}
+);
+};
+};
+width = 1187;
+}
+);
+}

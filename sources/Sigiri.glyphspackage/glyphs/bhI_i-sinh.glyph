@@ -1,0 +1,92 @@
+{
+glyphname = "bhIi-sinh";
+layers = (
+{
+layerId = m001;
+shapes = (
+{
+alignment = -1;
+pos = (783,-1);
+ref = "iisign-sinh.alt2";
+},
+{
+alignment = -1;
+ref = "bha-sinh";
+}
+);
+userData = {
+com.fontlab.hintData = {
+hhints = (
+{
+position = 0;
+width = 91;
+},
+{
+position = 1;
+width = 71;
+},
+{
+position = 1;
+width = 90;
+},
+{
+position = 209;
+width = 73;
+},
+{
+position = 278;
+width = 84;
+},
+{
+position = 391;
+width = 108;
+},
+{
+position = 402;
+width = 100;
+},
+{
+position = 498;
+width = 50;
+},
+{
+position = 594;
+width = 102;
+}
+);
+vhints = (
+{
+position = 58;
+width = 150;
+},
+{
+position = 108;
+width = 140;
+},
+{
+position = 352;
+width = 119;
+},
+{
+position = 507;
+width = 57;
+},
+{
+position = 538;
+width = 19;
+},
+{
+position = 633;
+width = 93;
+},
+{
+position = 641;
+width = 160;
+}
+);
+};
+};
+width = 821;
+}
+);
+}
