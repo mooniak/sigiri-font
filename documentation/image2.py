@@ -13,19 +13,20 @@ from fontTools.misc.fixedTools import floatToFixedToStr
 import subprocess
 import sys
 import argparse
+import glob
 
 # Constants, these are the main "settings" for the image
 WIDTH, HEIGHT, MARGIN, FRAMES = 2048, 1024, 128, 1
-FONT_PATH = "fonts/variable/MyFont[wght].ttf"
+FONT_PATH = (sorted(glob.glob("fonts/ttf/*.ttf")) or sorted(glob.glob("fonts/variable/*.ttf")))[0]
 FONT_LICENSE = "OFL v1.1"
 AUXILIARY_FONT = "Helvetica"
 AUXILIARY_FONT_SIZE = 48
 
-LINE_ONE = "ABCDEFGHIJKLMNOPQ"
-LINE_TWO = "RSTUVWXYZ123456789"
-LINE_THREE = "abcdefghijklmnopqrstu"
-LINE_FOUR = "vwxyz,.;:!@#$%^&*(){}[]"
-BIG_TEXT_FONT_SIZE = 160
+LINE_ONE = "අආඇඈඉඊඋඌඑඒඓඔඕඖ"
+LINE_TWO = "කඛගඝඞඟචඡජඣඤඥඦටඨ"
+LINE_THREE = "ඩඪණඬතථදධනඳපඵබභමඹ"
+LINE_FOUR = "යරලවශෂසහළෆ 0123456789"
+BIG_TEXT_FONT_SIZE = 130
 BIG_TEXT_SIDE_MARGIN = MARGIN * 1
 BIG_TEXT_BOTTOM_MARGIN = MARGIN * 5.45
 
@@ -126,7 +127,6 @@ def draw_auxiliary_text():
     URL_AND_HASH = MY_URL + "at commit " + MY_HASH
     URL_AND_HASH = URL_AND_HASH.replace("\n", " ")
     # Draw Text
-    #text("Your Font Regular", POS_TOP_LEFT, align="left")
     text(FONT_NAME, POS_TOP_LEFT, align="left")
     text(FONT_VERSION, POS_TOP_RIGHT, align="right")
     text(URL_AND_HASH, POS_BOTTOM_LEFT, align="left")
