@@ -1,0 +1,107 @@
+{
+  "id": "sigiri",
+  "family": "Sigiri",
+  "scripts": [
+    "Sinh"
+  ],
+  "version": "1.100",
+  "channel": "canary",
+  "commit": "6027bb1b69c09cccfa6d3367fd98ab47e539aad7",
+  "commit_short": "6027bb1",
+  "ref_name": "dev",
+  "repository": "mooniak/sigiri-font",
+  "run_url": "https://github.com/mooniak/sigiri-font/actions/runs/44325053138",
+  "actor": "pathumego",
+  "generated_at": "2026-11-18T14:32:09Z",
+  "qa": {
+    "profile": "googlefonts",
+    "verdict": "fail",
+    "pass_rate": 62,
+    "counts": {
+      "FAIL": 12,
+      "WARN": 20,
+      "SKIP": 87,
+      "INFO": 20,
+      "PASS": 85
+    },
+    "total_checks": 224
+  },
+  "stage": {
+    "n": 9,
+    "name": "Conjunct layer",
+    "cumulative": 100,
+    "total": 110,
+    "gate_met": true,
+    "kernel_checkable_complete": true,
+    "kernel_complete": null,
+    "unverified_kernel_entries": [
+      "classic-conjuncts",
+      "conjunct-i-forms",
+      "ksha",
+      "rakaransaya",
+      "repaya",
+      "yansaya"
+    ]
+  },
+  "files": [
+    {
+      "path": "fonts/otf/SigiriCANARY-Regular.otf",
+      "format": "otf",
+      "bytes": 56224,
+      "sha256": "85393496a04992dff797689635120f191a649e1b921d64777d7cd28d6be9e6a0",
+      "style": "Regular",
+      "kind": "static"
+    },
+    {
+      "path": "fonts/ttf/SigiriCANARY-Regular.ttf",
+      "format": "ttf",
+      "bytes": 152004,
+      "sha256": "666d679e5fafd77eafe9b3b43388895d9b28b5a946e24d0352e3b39f40f32bf8",
+      "style": "Regular",
+      "kind": "static"
+    },
+    {
+      "path": "fonts/webfonts/SigiriCANARY-Regular.woff2",
+      "format": "woff2",
+      "bytes": 48272,
+      "sha256": "8f9cb84736687ad7ad91a96c198b0a437cd283cafcfa1a192b06a6b47c6e485c",
+      "style": "Regular",
+      "kind": "static"
+    }
+  ],
+  "proof_gate": {
+    "stage": 9,
+    "gated": true,
+    "shown": [
+      "classical-texts",
+      "conjuncts",
+      "devanagari-pangram",
+      "display-strings",
+      "indo-arabic-numerals",
+      "kern-pairs",
+      "libreoffice-ui-strings",
+      "marks",
+      "mixed-script",
+      "multiscript",
+      "numerals",
+      "ot-features",
+      "pali-and-sanskrit-words",
+      "prose",
+      "punctuation",
+      "rakar",
+      "shape-groups",
+      "signs-combinations",
+      "sinhala-alphabet",
+      "sinhala-pangram",
+      "spacing_strings",
+      "structured-texts",
+      "tamil-pangram",
+      "test-texts-stages"
+    ],
+    "withheld": [],
+    "missing_for_next": [
+      "෴"
+    ],
+    "scripts": []
+  }
+}

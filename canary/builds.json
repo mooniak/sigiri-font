@@ -1,0 +1,84 @@
+[
+ {
+  "family": "Sigiri",
+  "commit": "6027bb1b69c09cccfa6d3367fd98ab47e539aad7",
+  "commit_short": "6027bb1",
+  "version": "1.100",
+  "generated_at": "2026-11-18T14:32:09Z",
+  "stage": {
+   "n": 9,
+   "name": "Conjunct layer",
+   "cumulative": 100,
+   "total": 110,
+   "gate_met": true,
+   "kernel_checkable_complete": true,
+   "kernel_complete": null,
+   "unverified_kernel_entries": [
+    "classic-conjuncts",
+    "conjunct-i-forms",
+    "ksha",
+    "rakaransaya",
+    "repaya",
+    "yansaya"
+   ]
+  },
+  "qa": {
+   "profile": "googlefonts",
+   "verdict": "fail",
+   "pass_rate": 62,
+   "counts": {
+    "FAIL": 12,
+    "WARN": 20,
+    "SKIP": 87,
+    "INFO": 20,
+    "PASS": 85
+   },
+   "total_checks": 224
+  },
+  "run_url": "https://github.com/mooniak/sigiri-font/actions/runs/44325053138",
+  "ref_name": "dev",
+  "channel": "canary",
+  "repository": "mooniak/sigiri-font"
+ },
+ {
+  "family": "Sigiri",
+  "commit": "80718c287ad285b6c98d73600f51d3857de2e820",
+  "commit_short": "80718c2",
+  "version": "1.000",
+  "generated_at": "2026-11-17T08:48:28Z",
+  "stage": {
+   "n": 9,
+   "name": "Conjunct layer",
+   "cumulative": 100,
+   "total": 110,
+   "gate_met": true,
+   "kernel_checkable_complete": true,
+   "kernel_complete": null,
+   "unverified_kernel_entries": [
+    "classic-conjuncts",
+    "conjunct-i-forms",
+    "ksha",
+    "rakaransaya",
+    "repaya",
+    "yansaya"
+   ]
+  },
+  "qa": {
+   "profile": "googlefonts",
+   "verdict": "fail",
+   "pass_rate": 62,
+   "counts": {
+    "FAIL": 12,
+    "WARN": 20,
+    "SKIP": 87,
+    "INFO": 20,
+    "PASS": 85
+   },
+   "total_checks": 224
+  },
+  "run_url": "https://github.com/mooniak/sigiri-font/actions/runs/44049725388",
+  "ref_name": "dev",
+  "channel": "canary",
+  "repository": "mooniak/sigiri-font"
+ }
+]
